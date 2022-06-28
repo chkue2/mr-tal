@@ -1,7 +1,7 @@
 let swiper2 = null
 let swiper3 = null
 $(document).ready(function(){
-  const swiper1 = new Swiper('.carton', {
+  const swiper1 = new Swiper('.universe .carton', {
     centeredSlides: true,
     slidesPerView: 'auto',
     spaceBetween: 204,
@@ -11,8 +11,8 @@ $(document).ready(function(){
     observer: true,
     observeParents: true,
     navigation: {
-      nextEl: '.carton .button.next',
-      prevEl: '.carton .button.prev',
+      nextEl: '.universe .carton .button.next',
+      prevEl: '.universe .carton .button.prev',
     },
   });
   swiper2 = new Swiper('.funding .left-swiper', {
@@ -45,6 +45,47 @@ $(document).ready(function(){
         swiper2.slideNext()
       }
     }
+  });
+  const swiper4 = new Swiper('.universe__mo .carton', {
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    loopedSlides: 5,  
+    autoHeight: false,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: '.universe__mo .carton .button.next',
+      prevEl: '.universe__mo .carton .button.prev',
+    },
+  });
+
+  const swiper5 = new Swiper('.funding__mo .swiper-container', {
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    loopedSlides: 5,  
+    autoHeight: false,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: '.funding__mo .button.next',
+      prevEl: '.funding__mo .button.prev',
+    },
+  });
+  const swiper6 = new Swiper('.benefit__mo .cards', {
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    autoHeight: true,
+    spaceBetween: 10,
+    loop: true,
+    loopedSlides: 5,  
+    navigation: {
+      nextEl: '.benefit__mo .button.next',
+      prevEl: '.benefit__mo .button.prev',
+    },
   });
 })
 

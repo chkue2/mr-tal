@@ -1,4 +1,7 @@
-header{
+header.mo{
+  display: none;
+}
+header.pc{
   background-color: rgba(112, 133, 206, 0.49);
   width: 100vw;
   height: 90px;
@@ -6,7 +9,7 @@ header{
   top: 0;
   z-index: 9;
 }
-header .container{
+header.pc .container{
   width: 100%;
   max-width: 1920px;
   height: 100%;
@@ -16,36 +19,36 @@ header .container{
   align-items: center;
   margin: 0 auto;
 }
-header .logo{
+header.pc .logo{
   width: 115px;
   height: 30px;
   display: block;
 }
-header .logo img{
+header.pc .logo img{
   width: 100%;
   height: 100%;
 }
-header .menu{
+header.pc .menu{
   display: flex;
 }
-header .menu .menu__item{
+header.pc .menu .menu__item{
   font-family: 'Luckiest Guy', cursive;
   font-size: 30px;
   color: #ffffff;
   -webkit-text-stroke: 1px black;
   cursor: pointer;
 }
-header .menu .menu__item + .menu__item{
+header.pc .menu .menu__item + .menu__item{
   margin-left: 21px;
 }
-header .menu .menu__item:hover{
+header.pc .menu .menu__item:hover{
   color: #01FC9F;
 }
-header .menu .sub{
+header.pc .menu .sub{
   position: relative;
   cursor: pointer;
 }
-header .menu .sub .sub__item.sns{
+header.pc .menu .sub .sub__item.sns{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,22 +62,22 @@ header .menu .sub .sub__item.sns{
   border: 2px solid #707070;
   margin-right: 12px;
 }
-header .menu .sub .sub__item.sns span{
+header.pc .menu .sub .sub__item.sns span{
   font-size: 15px;
   font-weight: 700;
   color: #ffffff;
   margin-left: 4px;
 }
-header .menu .sub .sub__item.sns + .list{
+header.pc .menu .sub .sub__item.sns + .list{
   padding: 20px 0;
   width: 117px;
   left: -15px;
 }
-header .menu .sub .sub__item.sns:hover + .list{
+header.pc .menu .sub .sub__item.sns:hover + .list{
   opacity: 1;
   visibility: visible;
 }
-header .menu .sub .sub__item.global{
+header.pc .menu .sub .sub__item.global{
   border-radius: 10px;
   width: 62px;
   height: 54px;
@@ -83,22 +86,22 @@ header .menu .sub .sub__item.global{
   box-shadow: 0px 3px 6px #00000029;
   transition: all .3s ease-in-out;
 }
-header .menu .sub .sub__item.global:hover{
+header.pc .menu .sub .sub__item.global:hover{
   background-color: rgba(252, 124, 197, 0.5);
 }
-header .menu .sub .sub__item.global img{
+header.pc .menu .sub .sub__item.global img{
   width: 100%;
   height: 100%;
 }
-header .menu .sub .sub__item.global + .list{
+header.pc .menu .sub .sub__item.global + .list{
   padding: 16px 0;
   width: 62px;
 }
-header .menu .sub .sub__item.global:hover + .list{
+header.pc .menu .sub .sub__item.global:hover + .list{
   opacity: 1;
   visibility: visible;
 }
-header .menu .list{
+header.pc .menu .list{
   position: absolute;
   background-color: #ffffff;
   border-radius: 10px;
@@ -106,19 +109,22 @@ header .menu .list{
   visibility: hidden;
   transition: all .3s ease-in-out;
 }
-header .menu .list:hover{
+header.pc .menu .list:hover{
   opacity: 1;
   visibility: visible;
 }
-header .menu .list a{
+header.pc .menu .list a{
   display: block;
   width: 100%;
   font-weight: 700;
   font-size: 15px;
   text-align: center;
 }
-header .menu .list a + a{
+header.pc .menu .list a + a{
   margin-top: 10px;
+}
+.social__mission__mo{
+  display: none;
 }
 .social__mission{
   background: url(/resource/img/pc/social_mission/s_bg.jpg) no-repeat center/cover;
@@ -214,6 +220,9 @@ header .menu .list a + a{
   z-index: 4;
   object-fit: cover;
 }
+.universe__mo{
+  display: none;
+}
 .universe{
   padding-top: 342px;
   padding: 342px 175px 374px 175px;
@@ -235,28 +244,28 @@ header .menu .list a + a{
   text-align: right;
   font-size: 40px;
 }
-.carton{
+.universe .carton{
   max-width: 1920px;
   margin: 0 auto;
   margin-top: 230px;
   position: relative;
 }
-.carton .swiper-slide{
+.universe .carton .swiper-slide{
   max-width: 1300px;
   opacity: .5;
   transform: scale(.8) translateZ(0) !important;
 }
-.carton .tab{
+.universe .carton .tab{
   display: flex;
   align-items: center;
 }
-.carton .tab p:nth-child(1){
+.universe .carton .tab p:nth-child(1){
   border-top-left-radius: 20px;
 }
-.carton .tab p:nth-child(2){
+.universe .carton .tab p:nth-child(2){
   border-top-right-radius: 20px;
 }
-.carton .tab p{
+.universe .carton .tab p{
   flex: 1;
   height: 200px;
   display: flex;
@@ -266,37 +275,37 @@ header .menu .list a + a{
   background-color: #F1F1EF;
   cursor: pointer;
 }
-.carton .tab p strong{
+.universe .carton .tab p strong{
   font-size: 50px;
 }
-.carton .tab p span{
+.universe .carton .tab p span{
   font-size: 30px;
   color: #B7B7B6;
   font-family: GmarketSansTTFMedium, sans-serif;
 }
-.carton .tab p.on{
+.universe .carton .tab p.on{
   background-color: #8C7DEA;
   border: 3px solid #000000;
   border-bottom: none;
 }
-.carton .tab p.on strong,
-.carton .tab p.on span{
+.universe .carton .tab p.on strong,
+.universe .carton .tab p.on span{
   color: #ffffff;
 }
-.carton .container{
+.universe .carton .container{
   background-color: #ffffff;
   border: 3px solid #000000;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 63px 200px 142px 200px;
 }
-.carton .container img{
+.universe .carton .container img{
   width: 100%;
   height: auto;
   border-radius: 20px;
   margin-bottom: 75px;
 }
-.carton .text{
+.universe .carton .text{
   width: 100%;
   height: 340px;
   overflow-y: auto;
@@ -304,11 +313,15 @@ header .menu .list a + a{
   font-family: GmarketSansTTFMedium, sans-serif;
   font-size: 30px;
 }
-.carton .swiper-slide.swiper-slide-active{
+.universe .carton .text strong{
+  font-family: GmarketSansTTFBold, sans-serif;
+  font-size: 30px;
+}
+.universe .carton .swiper-slide.swiper-slide-active{
   opacity: 1;
   transform: scale(1) translateZ(0) !important;
 }
-.carton .button{
+.universe .carton .button{
   width: 240px;
   height: 240px;
   position: absolute;
@@ -318,13 +331,16 @@ header .menu .list a + a{
   opacity: .5;
   cursor: pointer;
 }
-.carton .button.prev{
+.universe .carton .button.prev{
   background: url(/resource/img/pc/universe/arrow-left-s-line.png) no-repeat center/cover;
   left: 0;
 }
-.carton .button.next{
+.universe .carton .button.next{
   background: url(/resource/img/pc/universe/arrow-right-s-line.png) no-repeat center/cover;
   right: 0;
+}
+.funding__mo{
+  display: none;
 }
 .funding{
   padding-top: 342px;
@@ -452,7 +468,9 @@ header .menu .list a + a{
 .funding .right-swiper .swiper-slide.swiper-slide-active .info{
   display: flex;
 }
-
+.roadmap__mo{
+  display: none;
+}
 .roadmap{
   padding-top: 342px;
   padding: 124px 175px 540px 175px;
@@ -500,6 +518,7 @@ header .menu .list a + a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-radius: 20px;
 }
 .roadmap .content .row .item.color{
@@ -561,6 +580,9 @@ header .menu .list a + a{
   background: url(/resource/img/pc/roadmap/download-2-fill.png) no-repeat center/cover;
   position: absolute;
   left: 30px;
+}
+.benefit__mo{
+  display: none;
 }
 .benefit{
   padding: 400px 175px 650px 175px;
@@ -625,7 +647,7 @@ header .menu .list a + a{
 }
 .benefit .cards .column .card{
   flex: 1;
-  height: 1035px;
+  min-height: 1035px;
   border-radius: 20px;
   border: 3px solid #000000;
   position: relative;
@@ -743,6 +765,9 @@ header .menu .list a + a{
 .benefit .buttons p:hover{
   background-color: #ffffff;
   color: #000000;
+}
+.teams__mo{
+  display: none;
 }
 .teams{
   padding: 135px 175px 350px 175px;
@@ -940,6 +965,9 @@ header .menu .list a + a{
   border-radius: 10px;
   background-color: #ffffff;
   cursor: pointer;
+}
+.footer__mo{
+  display: none;
 }
 .footer{
   width: 100%;
