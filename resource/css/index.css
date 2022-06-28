@@ -127,7 +127,7 @@ header.pc .menu .list a + a{
   display: none;
 }
 .social__mission{
-  background: url(/resource/img/pc/social_mission/s_bg.jpg) no-repeat center/cover;
+  background: url(../img/pc/social_mission/s_bg.jpg) no-repeat center/cover;
   position: relative;
   padding-top: 132px;
 }
@@ -332,11 +332,11 @@ header.pc .menu .list a + a{
   cursor: pointer;
 }
 .universe .carton .button.prev{
-  background: url(/resource/img/pc/universe/arrow-left-s-line.png) no-repeat center/cover;
+  background: url(../img/pc/universe/arrow-left-s-line.png) no-repeat center/cover;
   left: 0;
 }
 .universe .carton .button.next{
-  background: url(/resource/img/pc/universe/arrow-right-s-line.png) no-repeat center/cover;
+  background: url(../img/pc/universe/arrow-right-s-line.png) no-repeat center/cover;
   right: 0;
 }
 .funding__mo{
@@ -489,7 +489,7 @@ header.pc .menu .list a + a{
 }
 .roadmap .content{
   border-radius: 20px;
-  background: url(/resource/img/pc/roadmap/r_bg_2.png) no-repeat center/cover;
+  background: url(../img/pc/roadmap/r_bg_2.png) no-repeat center/cover;
   padding: 180px;
   position: relative;
   display: flex;
@@ -577,7 +577,7 @@ header.pc .menu .list a + a{
   content: '';
   width: 36px;
   height: 36px;
-  background: url(/resource/img/pc/roadmap/download-2-fill.png) no-repeat center/cover;
+  background: url(../img/pc/roadmap/download-2-fill.png) no-repeat center/cover;
   position: absolute;
   left: 30px;
 }
@@ -626,13 +626,13 @@ header.pc .menu .list a + a{
   display: block;
   width: 30px;
   height: 30px;
-  background: url(/resource/img/pc/benefits/mrtal.png) no-repeat center/cover;
+  background: url(../img/pc/benefits/mrtal.png) no-repeat center/cover;
 }
 .benefit .guardians{
   display: block;
   width: 30px;
   height: 30px;
-  background: url(/resource/img/pc/benefits/guardians.png) no-repeat center/cover;
+  background: url(../img/pc/benefits/guardians.png) no-repeat center/cover;
 }
 .benefit .cards{
   display: flex;

@@ -455,7 +455,7 @@
     content: '';
     width: 30px;
     height: 30px;
-    background: url(/resource/img/pc/roadmap/download-2-fill.png) no-repeat center/cover;
+    background: url(../img/pc/roadmap/download-2-fill.png) no-repeat center/cover;
     margin-top: 4px;
   }
   .benefit{
@@ -496,13 +496,13 @@
     display: block;
     width: 19px;
     height: 19px;
-    background: url(/resource/img/pc/benefits/mrtal.png) no-repeat center/cover;
+    background: url(../img/pc/benefits/mrtal.png) no-repeat center/cover;
   }
   .benefit__mo .guardians{
     display: block;
     width: 19px;
     height: 19px;
-    background: url(/resource/img/pc/benefits/guardians.png) no-repeat center/cover;
+    background: url(../img/pc/benefits/guardians.png) no-repeat center/cover;
   }
   .benefit__mo .cards{
     position: relative;
