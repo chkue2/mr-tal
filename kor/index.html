@@ -4,27 +4,29 @@
     <title>Mr.TAL</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Mr.TAL"/>
-    <meta property="og:description" content="Mr.TAL"/>
+    <meta property="og:title" content="tallower"/>
+    <meta property="og:description" content="tallower"/>
     <meta property="og:image" content="#"/>
-    <meta property="twitter:title" content="Mr.TAL"/>
-    <meta property="twitter:description" content="Mr.TAL"/>
+    <meta property="twitter:title" content="tallower"/>
+    <meta property="twitter:description" content="tallower"/>
     <meta property="twitter:image" content="#"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="../resource/css/reset.css" />
     <link rel="stylesheet" href="../resource/css/index.css" />
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="../resource/css/mo_index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="../resource/lib/jquery-3.5.1-slim.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="../resource/js/index.js"></script>
   </head>
   <body>
-    <header>
+    <header class="pc">
       <div class="container">
-        <a href="/" class="logo"><img src="../resource/img/pc/header/header_logo.png" /></a>
+        <a class="logo" onclick="moveToTop()">
+          <img class="off" src="../resource/img/pc/header/header_logo.png" />
+          <img class="on" src="../resource/img/pc/header/header_logo_on.png" />
+        </a>
         <div class="menu">
           <p class="menu__item" id="socialMission">SOCIAL MISSION</p>
           <p class="menu__item" id="universe">UNIVERSE</p>
@@ -40,8 +42,8 @@
             <p class="sub__item sns">SNS<span>▼</span></p>
             <p class="list">
               <a href="#discord">DISCORD</a>
-              <a href="#twiter">TWITER</a>
-              <a href="#instagram">INSTAGRAM</a>
+              <a href="http://www.twitter.com/tallower2022" target="_blank">TWITER</a>
+              <a href="http://www.instagram.com/tallower" target="_blank">INSTAGRAM</a>
             </p>
           </div>
           <div class="sub">
@@ -49,36 +51,243 @@
               <img src="../resource/img/pc/header/global-line.png" />
             </p>
             <p class="list">
-              <a href="#kor">KOR</a>
-              <a href="#eng">ENG</a>
+              <a href="/">KOR</a>
+              <a href="/base/eng/">ENG</a>
             </p>
           </div>
         </div>
       </div>
     </header>
-    <section class="social__mission">
-      <div class="container">
-        <p class="title">SOCIAL MISSION</p>
-        <p class="content"><strong>Would you protect the disappearing beauty of Korea by becoming a "tallower"?</strong></p>
-        <p class="content mt">Hello, this letter is SOS to you.</p>
-        <p class="content">Did you know that <strong>about 24% of Korea's intangible cultural heritage is in danger</strong></p>
-        <p class="content">
-          of being cut off due to difficulties such as living? For hundreds of years, our time could be lost overnight.
-        </p>
-        <p class="content mt">We realized the seriousness of this problem,</p>
-        <p class="content">and we created a small town called “Nower”.</p>
-        <p class="content">Nower is protecting the disappearing beauty of Korea.</p>
-        <p class="content"><strong>Please protect our culture in “Nower".</strong></p>
-        <p class="accept">
-          ACCEPT
-        </p>
+    <header class="mo">
+      <i class="menu"></i>
+      <img src="../resource/img/pc/header/header_logo_on.png" onclick="moveToTop()" />
+      <i class="lang"></i>
+    </header>
+    <section class="sidemenu">
+      <p class="logo"><img src="../resource/img/mo/header/logo.png" /></p>
+      <p class="menu luckiest" id="socialMissonMo">SOCIAL MISSION</p>
+      <p class="menu luckiest" id="universeMo">UNIVERSE</p>
+      <p class="menu luckiest" id="fundingMo">FUNDING</p>
+      <p class="menu luckiest" id="roadmapMo">ROADMAP</p>
+      <p class="menu luckiest" id="benefitsMo">BENEFITS</p>
+      <p class="menu luckiest" id="teamsMo">TEAMS</p>
+      <p class="menu luckiest" id="newsMo">NEWS</p>
+      <p class="menu luckiest" id="shopMo">SHOP</p>
+      <p class="link">
+        <a class="blank">
+          <img src="../resource/img/mo/menu/discord-line.png" />
+          DISCORD
+        </a>
+      </p>
+      <p class="link">
+        <a href="http://www.twitter.com/tallower2022" target="_blank">
+          <img src="../resource/img/mo/menu/twitter-line.png" />
+          TWITTER
+        </a>
+      </p>
+      <p class="link">
+        <a href="href="http://www.instagram.com/tallower" target="_blank">
+          <img src="../resource/img/mo/menu/instagram-line.png" />
+          INSTAGRAM
+        </a>
+      </p>
+      <div class="close__button">
+        <p>X Close Menu</p>
       </div>
-      <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-1">
-      <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-2">
-      <img src="../resource/img/pc/social_mission/house.png" class="house__bottom">
-      <img src="../resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+    </section>
+    <section class="langmenu">
+      <div class="container">
+        <div class="wrapper">
+          <a href="/">KOR</a>
+          <p class="line"></p>
+          <a href="/base/eng/">ENG</a>
+        </div>
+        <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="../resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+      </div>
+    </section>
+    <section class="moremission">
+      <div class="container">
+        <img class="moremission__close" src="../resource/img/mo/universe/arrow_01.png" onclick="toggleAcceptMoreMission()">
+        <p class="mt">
+          <strong>대한민국 무형문화유산의 ¼가</strong>생활고 등 어려움으로 <strong>단절 위기</strong>에 처해 있다는 사실을 아시나요?<br>수백 년 동안 이어져 온 우리의 문화가 하루아침에 사라져 버릴 수도 있습니다.
+        </p>
+        <p>
+          이러한 문제에 심각성을 느낀 저희는, 무형문화유산 보존 서포터즈<br><strong>‘탈로워(Tallower)’</strong>를 준비했습니다.
+        </p>
+        <p>
+          ‘탈로워(Tallower)’란 한국의 <strong>전통문화</strong>를 상징하는 <strong>‘탈(TAL)’</strong>과 <strong>‘팔로워(Follower)’</strong>의 합성어로 Mr. TAL과 가디언즈 <strong>NFT를 보유한 홀더</strong>를 의미한답니다.
+        </p>
+        <p>‘탈로워’가 되어 무형문화유산 전승자 발굴, 보유단체의 해외공연 후원 등<br><strong>무형문화유산 보존 서포터즈가 되어주세요.</strong></p>
+        <a class="accept" onclick="moveToUniverseMo()">수락하기</a>
+        <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="../resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+      </div>
+    </section>
+    <section class="socialMission social__mission">
+      <div class="maxwidth">
+        <div class="container">
+          <p class="title">SOCIAL MISSION</p>
+          <p data-aos="fade-up" data-aos-duration="1000" class="content"><strong>사라져가는 한국의 아름다움을 지켜주세요!</strong></p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="content mt"><strong>대한민국 무형문화유산의 ¼가</strong></p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="content">생활고 등 어려움으로 단절 위기에 처해 있다는 사실을 아시나요?</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="content">수백 년 동안 이어져 온 우리의 문화가 하루아침에 사라져 버릴 수도 있습니다.</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="content mt">이러한 문제에 심각성을 느낀 저희는,</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="content">무형문화유산 보존 서포터즈 <strong>‘탈로워(Tallower)’</strong>를 준비했습니다.</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="content mt">‘탈로워(Tallower)’란</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="content">한국의 <strong>전통문화</strong>를 상징하는 <strong>‘탈(TAL)’</strong>과 <strong>‘팔로워(Follower)’</strong>의 합성어로</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="content">Mr. TAL과 가디언즈 NFT를 보유한 홀더를 의미한답니다.</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="content mt">‘탈로워’가 되어 무형문화유산 전승자 발굴, 보유단체의 해외공연 후원 등</p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="content"><strong>무형문화유산 보존 서포터즈가 되어주세요.</strong></p>
+          <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="accept" onclick="moveToUniverse()">
+            수락하기
+          </p>
+        </div>
+        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200" src="../resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400" src="../resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="../resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+      </div>
+    </section>
+    <section class="social__mission__mo socialMissonMo">
+      <div class="max-width">
+        <div class="container">
+          <p class="title">SOCIAL<br>MISSION</p>
+          <p class="content">사라져가는 한국의 아름다움을<br>지켜주세요!</p>
+          <div class="buttons">
+            <p onclick="toggleAcceptMoreMission()">편지보기</p>
+            <p onclick="moveToUniverseMo()">수락하기</p>
+          </div>
+        </div>
+        <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img src="../resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="../resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+      </div>
     </section>
     <section class="universe">
+      <div class="maxwidth">
+        <div class="title">
+          <div class="underline">
+            <p class="luckiest hover-rotate">
+              UNIVERSE
+            </p>
+          </div>
+        </div>
+        <p class="content">노어(Nower)에서 Mr.TAL과 그를 수호하는 5마리의 가디언즈가 있습니다.<br>Mr.TAL이 되어 가디언즈와 함께 모험을 떠나보세요.</p>
+        <div class="carton">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="tab">
+                <p class="season1 on">
+                  <strong class="luckiest">SEASON 01</strong>
+                  <span>디스토피아에서 만난 평생의 친구</span>
+                </p>
+                <p class="season2">
+                  <strong class="luckiest">SEASON 02</strong>
+                  <span>COMING SOON</span>
+                </p>
+              </div>
+              <div class="container">
+                <img src="../resource/img/pc/universe/u_img_1.jpg">
+                <div class="text">2XXX년,<br>인간의 감정과 문화가 존중받지 못하는 세상.<br>어딜가나 보이는 건 높은 빌딩뿐이다.<br><strong>어디에도 초록빛깔은 존재하지 않는다.</strong><br>미세먼지가 가득한 세상 속에서<br>마스크형 산소호흡기를 쓴 사람들이 거리를 걷는다.</div>
+                <p class="page">1</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab">
+                <p class="season1 on">
+                  <strong class="luckiest">SEASON 01</strong>
+                  <span>디스토피아에서 만난 평생의 친구</span>
+                </p>
+                <p class="season2">
+                  <strong class="luckiest">SEASON 02</strong>
+                  <span>COMING SOON</span>
+                </p>
+              </div>
+              <div class="container">
+                <img src="../resource/img/pc/universe/u_img_2.jpg">
+                <div class="text">
+                  <div class="text">집으로 돌아가기 위해 같은 길을 걷던 당신은<br><strong><공사중></strong>이라는 팻말을 보고 다른 길로 돌아간다.</div>
+                </div>
+                <p class="page">2</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab">
+                <p class="season1 on">
+                  <strong class="luckiest">SEASON 01</strong>
+                  <span>디스토피아에서 만난 평생의 친구</span>
+                </p>
+                <p class="season2">
+                  <strong class="luckiest">SEASON 02</strong>
+                  <span>COMING SOON</span>
+                </p>
+              </div>
+              <div class="container">
+                <img src="../resource/img/pc/universe/u_img_3.jpg">
+                <div class="text">“<strong>떨어진다!!”</strong><br>빛이 없는 어둠 속에서 길을 걷다가 발을 잘못 디딘다.<br>상황을 파악하기도 전에 구멍으로 떨어지고 만다.</div>
+                <p class="page">3</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab">
+                <p class="season1 on">
+                  <strong class="luckiest">SEASON 01</strong>
+                  <span>디스토피아에서 만난 평생의 친구</span>
+                </p>
+                <p class="season2">
+                  <strong class="luckiest">SEASON 02</strong>
+                  <span>COMING SOON</span>
+                </p>
+              </div>
+              <div class="container">
+                <img src="../resource/img/pc/universe/u_img_4.jpg">
+                <div class="text">땅에 떨어진다.<br>고통은 잠시이고, 호기심과 두려움으로 심장이 두근거린다.<br>거대한 동굴 안에서 빛이 새어나온다.<br>빛의 출처가 궁금해 들어가보고 싶지만,<br>큰 바위가 앞을 가로막고 있다.<br>밀어보지만 밀리지가 않아 포기하고 돌아선다.<br>그 때 무언가가 옷깃을 붙잡는다.<br>뒤를 돌아보면,<br>믿기지 않는 풍경이 눈 앞에 펼쳐져 있다.<br><strong>푸른 자연이 가득한 공간 속에 서 있는 말 한 마리</strong><br><strong>‘석마’</strong></div>
+                <p class="page">4</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab">
+                <p class="season1 on">
+                  <strong class="luckiest">SEASON 01</strong>
+                  <span>디스토피아에서 만난 평생의 친구</span>
+                </p>
+                <p class="season2">
+                  <strong class="luckiest">SEASON 02</strong>
+                  <span>COMING SOON</span>
+                </p>
+              </div>
+              <div class="container">
+                <img src="../resource/img/pc/universe/u_img_5.jpg">
+                <div class="text">석마가 구슬 하나를 건넨다.<br>구슬 속에는 작은 동물이 그려져 있는데,<br>정확하게 어떤 동물인지는 알 수 없다.<br>구슬을 들어 햇빛에 비추자 빛이 번쩍인다.<br>강한 빛에 정신을 잃는다.<br><strong>눈을 뜨자 동그란 얼굴이 눈에 들어온다.</strong><br><strong>호기심이 가득한 귀여운 얼굴, 진묘수다.</strong></div>
+                <p class="page">5</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="tab">
+                <p class="season1 on">
+                  <strong class="luckiest">SEASON 01</strong>
+                  <span>디스토피아에서 만난 평생의 친구</span>
+                </p>
+                <p class="season2">
+                  <strong class="luckiest">SEASON 02</strong>
+                  <span>COMING SOON</span>
+                </p>
+              </div>
+              <div class="container">
+                <img src="../resource/img/pc/universe/u_img_6.jpg">
+                <div class="text">고된 여행길에 지친 몸을 이끌고<br>옹달샘에 도착해 몸을 뉘인다.<br>석마와 진묘수가 당신의 마스크를 벗겨버린다.<br>얼굴이 드러나 당황한 당신에게 석마와 진묘수가 상자를 내민다.<br>상자를 열자, ‘탈’이 들어 있다.<br>탈을 쓰고 옹달샘을 바라본다.<br><strong>새로운 ‘나’의 모습이 마음에 든다.</strong></div>
+                <p class="page">6</p>
+              </div>
+            </div>
+          </div>
+          <i class="button prev"></i>
+          <i class="button next"></i>
+        </div>
+      </div>
+    </section>
+    <section class="universe__mo universeMo">
       <div class="title">
         <div class="underline">
           <p class="luckiest hover-rotate">
@@ -86,16 +295,14 @@
           </p>
         </div>
       </div>
-      <p class="content">
-        The Beautiful and Mysterious Adventures of<br>“Mr.TAL’ and the ‘Guardians’ in “Nower”
-      </p>
+      <p class="content">노어(Nower)에는<br>Mr.TAL과 그를 수호하는<br>5마리의 가디언즈가 있습니다.<br>Mr.TAL이 되어 가디언즈와 함께<br>모험을 떠나보세요.</p>
       <div class="carton">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="tab">
               <p class="season1 on">
                 <strong class="luckiest">SEASON 01</strong>
-                <span>A lifelong friend I met in dystopia</span>
+                <span>디스토피아에서 만난 평생의 친구</span>
               </p>
               <p class="season2">
                 <strong class="luckiest">SEASON 02</strong>
@@ -104,16 +311,15 @@
             </div>
             <div class="container">
               <img src="../resource/img/pc/universe/u_img_1.jpg">
-              <div class="text">
-                2xxx.<br><br>Walking in a gray city in a world where human<br>emotions and cultures are not respected and excluded.
-              </div>
+              <div class="text">2XXX년,<br>인간의 감정과 문화가 존중받지 못하는 세상.<br>어딜가나 보이는 건 높은 빌딩뿐이다.<br><strong>어디에도 초록빛깔은 존재하지 않는다.</strong><br>미세먼지가 가득한 세상 속에서<br>마스크형 산소호흡기를 쓴 사람들이 거리를 걷는다.</div>
+              <p class="page">1</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="tab">
               <p class="season1 on">
                 <strong class="luckiest">SEASON 01</strong>
-                <span>A lifelong friend I met in dystopia</span>
+                <span>디스토피아에서 만난 평생의 친구</span>
               </p>
               <p class="season2">
                 <strong class="luckiest">SEASON 02</strong>
@@ -122,16 +328,15 @@
             </div>
             <div class="container">
               <img src="../resource/img/pc/universe/u_img_2.jpg">
-              <div class="text">
-                2xxx.<br><br>Walking in a gray city in a world where human<br>emotions and cultures are not respected and excluded.
-              </div>
+              <div class="text">집으로 돌아가기 위해 같은 길을 걷던 당신은<br><strong><공사중></strong>이라는 팻말을 보고 다른 길로 돌아간다.</div>
+              <p class="page">2</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="tab">
               <p class="season1 on">
                 <strong class="luckiest">SEASON 01</strong>
-                <span>A lifelong friend I met in dystopia</span>
+                <span>디스토피아에서 만난 평생의 친구</span>
               </p>
               <p class="season2">
                 <strong class="luckiest">SEASON 02</strong>
@@ -140,16 +345,15 @@
             </div>
             <div class="container">
               <img src="../resource/img/pc/universe/u_img_3.jpg">
-              <div class="text">
-                2xxx.<br><br>Walking in a gray city in a world where human<br>emotions and cultures are not respected and excluded.
-              </div>
+              <div class="text">“<strong>떨어진다!!”</strong><br>빛이 없는 어둠 속에서 길을 걷다가 발을 잘못 디딘다.<br>상황을 파악하기도 전에 구멍으로 떨어지고 만다.</div>
+              <p class="page">3</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="tab">
               <p class="season1 on">
                 <strong class="luckiest">SEASON 01</strong>
-                <span>A lifelong friend I met in dystopia</span>
+                <span>디스토피아에서 만난 평생의 친구</span>
               </p>
               <p class="season2">
                 <strong class="luckiest">SEASON 02</strong>
@@ -158,16 +362,15 @@
             </div>
             <div class="container">
               <img src="../resource/img/pc/universe/u_img_4.jpg">
-              <div class="text">
-                2xxx.<br><br>Walking in a gray city in a world where human<br>emotions and cultures are not respected and excluded.
-              </div>
+              <div class="text">땅에 떨어진다.<br>고통은 잠시이고, 호기심과 두려움으로 심장이 두근거린다.<br>거대한 동굴 안에서 빛이 새어나온다.<br>빛의 출처가 궁금해 들어가보고 싶지만,<br>큰 바위가 앞을 가로막고 있다.<br>밀어보지만 밀리지가 않아 포기하고 돌아선다.<br>그 때 무언가가 옷깃을 붙잡는다.<br>뒤를 돌아보면,<br>믿기지 않는 풍경이 눈 앞에 펼쳐져 있다.<br><strong>푸른 자연이 가득한 공간 속에 서 있는 말 한 마리</strong><br><strong>‘석마’</strong></div>
+              <p class="page">4</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="tab">
               <p class="season1 on">
                 <strong class="luckiest">SEASON 01</strong>
-                <span>A lifelong friend I met in dystopia</span>
+                <span>디스토피아에서 만난 평생의 친구</span>
               </p>
               <p class="season2">
                 <strong class="luckiest">SEASON 02</strong>
@@ -176,16 +379,15 @@
             </div>
             <div class="container">
               <img src="../resource/img/pc/universe/u_img_5.jpg">
-              <div class="text">
-                2xxx.<br><br>Walking in a gray city in a world where human<br>emotions and cultures are not respected and excluded.
-              </div>
+              <div class="text">석마가 구슬 하나를 건넨다.<br>구슬 속에는 작은 동물이 그려져 있는데,<br>정확하게 어떤 동물인지는 알 수 없다.<br>구슬을 들어 햇빛에 비추자 빛이 번쩍인다.<br>강한 빛에 정신을 잃는다.<br><strong>눈을 뜨자 동그란 얼굴이 눈에 들어온다.</strong><br><strong>호기심이 가득한 귀여운 얼굴, 진묘수다.</strong></div>
+              <p class="page">5</p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="tab">
               <p class="season1 on">
                 <strong class="luckiest">SEASON 01</strong>
-                <span>A lifelong friend I met in dystopia</span>
+                <span>디스토피아에서 만난 평생의 친구</span>
               </p>
               <p class="season2">
                 <strong class="luckiest">SEASON 02</strong>
@@ -194,9 +396,8 @@
             </div>
             <div class="container">
               <img src="../resource/img/pc/universe/u_img_6.jpg">
-              <div class="text">
-                2xxx.<br><br>Walking in a gray city in a world where human<br>emotions and cultures are not respected and excluded.
-              </div>
+              <div class="text">고된 여행길에 지친 몸을 이끌고<br>옹달샘에 도착해 몸을 뉘인다.<br>석마와 진묘수가 당신의 마스크를 벗겨버린다.<br>얼굴이 드러나 당황한 당신에게 석마와 진묘수가 상자를 내민다.<br>상자를 열자, ‘탈’이 들어 있다.<br>탈을 쓰고 옹달샘을 바라본다.<br><strong>새로운 ‘나’의 모습이 마음에 든다.</strong></div>
+              <p class="page">6</p>
             </div>
           </div>
         </div>
@@ -205,6 +406,81 @@
       </div>
     </section>
     <section class="funding">
+      <div class="maxwidth">
+        <div class="title">
+          <div class="underline">
+            <p class="luckiest hover-rotate">
+              FUNDING
+            </p>
+          </div>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000" class="content">
+          NFT는 Mr.TAL과 가디언즈 별 탄생배경, 성격, 특장점에 의해 구성되어 있습니다.<br><strong>세상에 단 하나 밖에 없는 가디언즈는 Mr.TAL인 당신의 곁을 평생 지켜줄 것입니다.</strong>
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" class="content">
+          ‘탈로워 (TALIOWER)NFT’는 <strong>이더리움을 기반</strong>으로<br>‘Mr.TAL’과 ‘5마리의 가디언즈’의 <strong>이야기를 담아 발행 예정</strong>입니다.
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" class="content">
+          탈로워는 <strong>3가지 루트로 가입할 수 있습니다.</strong><br>첫번째. 크라우드 펀딩 플랫폼에서 무형문화유산 관련 굿즈를 포함한<br>패키지 형태로 가입 (원화결제)
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" class="content">
+          두번째. 홈페이지 내 자체 민팅으로 통한 가입<br>(이더리움 결제, 전자지갑 필요, 9월 내 오픈 예정)<br>세번째. 홈페이지 내 원화 기부를 통한 가입<br>(추후 오픈 예정, 기부영수증 발급 가능, 멤버십 혜택 제공(NFT 전달 불가))
+        </p>
+        <p data-aos="fade-up" data-aos-duration="1000" class="subcontent">
+          탈로워 NFT는 미션 성공 시 차례로 오픈되며, 보유 NFT 조합에 따라 멤버십 등급이 산정되며 이에 따른 혜택이 제공됩니다.
+        </p>
+        <div class="swiper-container">
+          <div class="left-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <p class="swiper__title hidden">The guide on the way</p>
+                <p class="swiper__content hidden">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
+                  He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
+                <div class="swiper__buttons hidden">
+                  <a>Buy on<br>Opensea</a>
+                  <a href="https://tumblbug.com/1stmrtal?ref=%EB%A9%94%EC%9D%B8%2F%EC%B5%9C%EA%B7%BC">Go to<br>Tumblbug</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper__title"><strong>석마 :</strong> 길을 인도하는 안내자</p>
+                <p class="swiper__content">석마는 노어에서 만나는 <strong>첫번째 가디언</strong>입니다.<br>도전을 좋아하고 용감한 성격으로<br>Mr.TAL이 가고자 하는 길을 안내합니다.</p>
+                <div class="swiper__buttons">
+                  <a>Buy on<br>Opensea</a>
+                  <a href="https://tumblbug.com/1stmrtal?ref=%EB%A9%94%EC%9D%B8%2F%EC%B5%9C%EA%B7%BC">Go to<br>Tumblbug</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <p class="swiper__title hidden">The guide on the way</p>
+                <p class="swiper__content hidden">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
+                  He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
+                <div class="swiper__buttons hidden">
+                  <a>Buy on<br>Opensea</a>
+                  <a href="https://tumblbug.com/1stmrtal?ref=%EB%A9%94%EC%9D%B8%2F%EC%B5%9C%EA%B7%BC">Go to<br>Tumblbug</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../resource/img/pc/funding/guardian_seokma.png" />
+                <p class="info">이름: 석마<br>탄생지: 조선왕릉<br>출몰지: 서울, 경기도 일대</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="noimage luckiest">?</div>
+                <p class="info none">이름: 석마<br>탄생지: 조선왕릉<br>출몰지: 서울, 경기도 일대</p>
+              </div>
+              <div class="swiper-slide">
+                <div class="noimage luckiest">?</div>
+                <p class="info none">이름: 석마<br>탄생지: 조선왕릉<br>출몰지: 서울, 경기도 일대</p>
+              </div>
+            </div>
+          </div>
+          <img class="bg-circle" src="../resource/img/pc/funding/f_bg_2.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="funding__mo fundingMo">
       <div class="title">
         <div class="underline">
           <p class="luckiest hover-rotate">
@@ -213,66 +489,106 @@
         </div>
       </div>
       <p class="content">
-        In Nower, there are <strong>“Mr.TAL” and “5 – guardian” defending Mr.</strong><br>
-        TAL.Become a ‘Mr.TAL’ and go on an adventure with the Guardians<br>
-        The “NFT” reflects the birth background and theier own characteristics of ‘Mr. TAL’ and ‘Guardians’.<br>
-        <strong>The only Guardians in the world will be there for you forever, the owner.</strong>
+        NFT는 Mr.TAL과 가디언즈<br>별 탄생배경, 성격, 특장점에 의해<br>구성되어 있습니다.<br><strong>세상에 단 하나 밖에 없는 가디언즈는<br>Mr.TAL인 당신의 곁을 평생<br>지켜줄 것입니다.</strong><br><br>‘탈로워 (TALIOWER)NFT’는<br><strong>이더리움을 기반</strong>으로<br>‘Mr.TAL’과 ‘5마리의 가디언즈’의<br><strong>이야기를 담아 발행 예정</strong>입니다.<br><br>탈로워는 <strong>3가지 루트로<br>가입할 수 있습니다.</strong><br>첫번째. 크라우드 펀딩 플랫폼에서<br>무형문화유산 관련 굿즈를 포함한<br>패키지 형태로 가입 (원화결제)<br><br>두번째. 홈페이지 내 자체 민팅으로<br>통한 가입 (이더리움 결제, 전자지갑 필요, 9월 내 오픈 예정)<br><br>세번째. 홈페이지 내 원화 기부를 통한 가입<br>(추후 오픈 예정, 기부영수증 발급 가능, 멤버십 혜택 제공(NFT 전달 불가))
       </p>
       <p class="subcontent">
-        Each Guardians will be opened upon the success of the ‘Tallower Mission’<br>
-        and will benefit from the NFT combination
+        탈로워 NFT는 미션 성공 시 차례로 오픈되며,<br><strong>보유 NFT 조합에 따라 멤버십 등급이 산정되며</strong><br><strong>이에 따른 혜택이 제공</strong>됩니다.
       </p>
       <div class="swiper-container">
-        <div class="left-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <p class="swiper__title">The guide on the way</p>
-              <p class="swiper__content">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
-                He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
-              <div class="swiper__buttons">
-                <a>Buy on<br>Opensea</a>
-                <a>Go to<br>Tumblbug</a>
-              </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="swiper__title"><strong>석마 :</strong> 길을 인도하는 안내자</p>
+            <img src="../resource/img/pc/funding/guardian_seokma.png" alt="">
+            <div class="box__container"><p class="box">이름: 석마<br>탄생지: 조선왕릉<br>출몰지: 서울, 경기도 일대</p></div>
+            <p class="swiper__content">석마는 노어에서 만나는 <strong>첫번째 가디언</strong>입니다.<br>도전을 좋아하고 용감한 성격으로<br>Mr.TAL이 가고자 하는 길을 안내합니다.</p>
+            <div class="swiper__buttons">
+              <a>Buy on<br>Opensea</a>
+              <a>Go to<br>Tumblbug</a>
             </div>
-            <div class="swiper-slide">
-              <p class="swiper__title">The guide on the way</p>
-              <p class="swiper__content">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
-                He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
-              <div class="swiper__buttons">
-                <a>Buy on<br>Opensea</a>
-                <a>Go to<br>Tumblbug</a>
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper__title hidden">The guide on the way</p>
+            <div class="noimage luckiest">?</div>
+            <div class="box__container hidden"><p class="box">Seokma<br>Tomb of the Joseon Dynasty<br>Seoul and Gyeonggi Province</p></div>
+            <p class="swiper__content hidden">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
+              He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
+            <div class="swiper__buttons hidden">
+              <a>Buy on<br>Opensea</a>
+              <a>Go to<br>Tumblbug</a>
             </div>
-            <div class="swiper-slide">
-              <p class="swiper__title">The guide on the way</p>
-              <p class="swiper__content">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
-                He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
-              <div class="swiper__buttons">
-                <a>Buy on<br>Opensea</a>
-                <a>Go to<br>Tumblbug</a>
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="swiper__title hidden">The guide on the way</p>
+            <div class="noimage luckiest">?</div>
+            <div class="box__container hidden"><p class="box">Seokma<br>Tomb of the Joseon Dynasty<br>Seoul and Gyeonggi Province</p></div>
+            <p class="swiper__content hidden">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
+              He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
+            <div class="swiper__buttons hidden">
+              <a>Buy on<br>Opensea</a>
+              <a>Go to<br>Tumblbug</a>
             </div>
           </div>
         </div>
-        <div class="right-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="../resource/img/pc/funding/guardian_jin.png" />
-              <p class="info">Seokma/ Tomb of the Joseon Dynasty / Seoul and Gyeonggi Province</p>
+        <i class="button prev"></i>
+        <i class="button next"></i>
+      </div>
+    </section>
+    <section class="roadmap">
+      <div class="maxwidth">
+        <div class="title">
+          <div class="underline">
+            <p class="luckiest hover-rotate">
+              ROAD MAP
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <img class="background" src="../resource/img/pc/roadmap/r_bg_1.png">
+          <div class="row">
+            <p class="item color purple">무형 문화유산 지원</p>
+            <div class="item basic">
+              <p class="title">보존회 단체<br>연간 운영비 지원</p>
+              <p class="subtitle">20개 단체</p>
             </div>
-            <div class="swiper-slide">
-              <img src="../resource/img/pc/funding/guardian_seokma.png" />
-              <p class="info">Seokma/ Tomb of the Joseon Dynasty / Seoul and Gyeonggi Province</p>
+            <div class="item basic">
+              <p class="title">무형문화유산보존회 회원 대상<br>디지털 전환교육(온라인 입점 및 홍보 등) 운영</p>
+              <p class="subtitle">100개 단체</p>
             </div>
-            <div class="swiper-slide">
-              <img src="../resource/img/pc/funding/guardian_jin.png" />
-              <p class="info">Seokma/ Tomb of the Joseon Dynasty / Seoul and Gyeonggi Province</p>
+            <div class="item basic">
+              <p class="title">무형문화유산 전수자 발굴을 위한 장학금 지원</p>
+              <p class="subtitle">30명</p>
             </div>
+            <div class="item basic">
+              <p class="title">무형문화유산보존회가 참여할 수 있는<br>국내외 공연/전시 제작지원</p>
+              <p class="subtitle">연 5회</p>
+            </div>
+            <div class="item basic">
+              <p class="title">글로벌 OTT플랫폼과 협업하여<br>무형문화유산 주제로 시리즈물 제작 및 송출</p>
+              <p class="subtitle">해외 대형 OTT 플랫폼 연계</p>
+            </div>
+          </div>
+          <div class="row">
+            <p class="item color blue">탈로워 혜택 확대</p>
+            <div class="item basic">
+              <p class="title">유통그룹과 연계하여 팝업 스토어 등<br>오프라인 행사 개최</p>
+              <p class="subtitle">하단 BENEFITS 참고</p>
+            </div>
+            <div class="item basic">
+              <p class="title">타 NFT와 콜라보를 통한 혜택 확대</p>
+            </div>
+            <div class="item basic">
+              <p class="title">문형문화유산 통합 서비스(SHOP) 오픈</p>
+            </div>
+            <p class="download">
+              <a class="container">
+                상세 로드맵 보기
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="roadmap">
+    <section class="roadmap__mo roadmapMo">
       <div class="title">
         <div class="underline">
           <p class="luckiest hover-rotate">
@@ -282,51 +598,267 @@
       </div>
       <div class="content">
         <img class="background" src="../resource/img/pc/roadmap/r_bg_1.png">
+        <p class="item color purple">
+          <span>무형 문화유산 지원</span>
+          <span>▼</span>
+        </p>
         <div class="row">
-          <p class="item color purple">Intangible Cultural Heritage Support</p>
           <div class="item basic">
-            <p class="title">a conservation society Annual operating expenses support</p>
-            <p class="subtitle">20 organizations</p>
+            <p class="title">보존회 단체<br>연간 운영비 지원</p>
+            <p class="subtitle">20개 단체</p>
           </div>
           <div class="item basic">
-            <p class="title">international performances exhibitions Planning and production support</p>
-            <p class="subtitle">5 times a year</p>
+            <p class="title">무형문화유산보존회 회원 대상<br>디지털 전환교육<br>(온라인 입점 및 홍보 등) 운영</p>
+            <p class="subtitle">100개 단체</p>
           </div>
           <div class="item basic">
-            <p class="title">Operation of Digital Transformation Education</p>
-            <p class="subtitle">100 organizations</p>
+            <p class="title">무형문화유산 전수자 발굴을 위한 장학금 지원</p>
+            <p class="subtitle">30명</p>
           </div>
           <div class="item basic">
-            <p class="title">Production and transmission of 'OTT' series and public service advertisements</p>
-            <p class="subtitle">Link to OTT Platforms</p>
+            <p class="title">무형문화유산보존회가 참여할 수 있는<br>국내외 공연/전시 제작지원</p>
+            <p class="subtitle">연 5회</p>
           </div>
           <div class="item basic">
-            <p class="title">Discovering the transcripts andscholarship support</p>
-            <p class="subtitle">30 people</p>
+            <p class="title">글로벌 OTT플랫폼과 협업하여<br>무형문화유산 주제로<br>시리즈물 제작 및 송출</p>
+            <p class="subtitle">해외 대형 OTT 플랫폼 연계</p>
           </div>
         </div>
+        <p class="item color blue">
+          <span>탈로워 혜택 확대</span>
+          <span>▼</span>
+        </p>
         <div class="row">
-          <p class="item color blue">Extend Tallower Benefits</p>
           <div class="item basic">
-            <p class="title">Expanding membership services</p>
-            <p class="subtitle">5 times a year</p>
+            <p class="title">유통그룹과 연계하여 팝업 스토어 등<br>오프라인 행사 개최</p>
+            <p class="subtitle">하단 BENEFITS 참고</p>
           </div>
           <div class="item basic">
-            <p class="title">Expanding the 'NFT' Worldview</p>
-            <p class="subtitle">Season 2 will be released</p>
+            <p class="title">타 NFT와 콜라보를 통한 혜택 확대</p>
           </div>
           <div class="item basic">
-            <p class="title">Based on Toconomics App Service Development</p>
+            <p class="title">문형문화유산 통합 서비스(SHOP) 오픈</p>
           </div>
-          <p class="download">
-            <a class="container">
-              Roadmap 2.0
-            </a>
-          </p>
+        </div>
+        <p class="download">
+          <a class="container">
+            상세 로드맵 보기
+          </a>
+        </p>
+      </div>
+    </section>
+    <section class="benefit benefits">
+      <div class="maxwidth">
+        <div class="title">
+          <div class="underline">
+            <p class="luckiest hover-rotate">
+              BENEFIT
+            </p>
+          </div>
+        </div> 
+        <p data-aos="fade-up" data-aos-duration="1000" class="content light">멤버십 등급별 혜택(NFT 조합에 따라 제공)은 추후 변동될 수 있으며,<br>변동사항은 공지를 통해 안내됩니다.</p>
+        <p data-aos="fade-up" data-aos-duration="1000" class="content bold">원화 기부를 통해 탈로워에 가입한신 분들께는 기부금에 따라 4-6등급의 멤버십 혜택이 제공됩니다.</p>
+        <div class="caption">
+          <p><i class="mrtal"></i>미스터 탈</p>
+          <p><i class="guardians"></i>가디언즈</p>
+        </div>
+        <div class="cards">
+          <div class="column">
+            <div class="card yellow">
+              <img class="star" src="../resource/img/pc/benefits/yellow.png">
+              <p class="top">Grade 1</p>
+              <div class="icons">
+                <i class="mrtal"></i>
+              </div>
+              <div class="icons mb">
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <p class="light dot"><strong>SHOP 이용권</strong></p>
+                  <p class="light">(무형문화유산 통합 서비스 이용권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 관련 체험 상품)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 입장권</p>
+                  <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>지적소유권</strong> 2차 가공</p>
+                  <p class="light">(보유 NFT에 대한 지적 소유권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>공예품 구독</strong> 추첨권</p>
+                  <p class="light">(무형문화유산 활용 기념품 전달)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>해외공연 / 전시</strong> 추첨권</p>
+                  <p class="light">(무형문화유산 홍보를 위한 해외 공연/전시 참석을 위한 유류비 지원)</p>
+                </div>
+              </div>
+            </div>
+            <div class="card orange">
+              <img class="star" src="../resource/img/pc/benefits/orange.png">
+              <p class="top">Grade 2</p>
+              <div class="icons">
+                <i class="mrtal"></i>
+              </div>
+              <div class="icons mb">
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <p class="light dot"><strong>SHOP 이용권</strong></p>
+                  <p class="light">(무형문화유산 통합 서비스 이용권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 관련 체험 상품)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 입장권</p>
+                  <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>지적소유권</strong> 2차 가공</p>
+                  <p class="light">(보유 NFT에 대한 지적 소유권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>공예품 구독</strong> 추첨권</p>
+                  <p class="light">(무형문화유산 활용 기념품 전달)</p>
+                </div>
+              </div>
+            </div>
+            <div class="card blue">
+              <img class="star" src="../resource/img/pc/benefits/blue.png">
+              <p class="top">Grade 3</p>
+              <div class="icons">
+                <i class="mrtal"></i>
+              </div>
+              <div class="icons mb">
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <p class="light dot"><strong>SHOP 이용권</strong></p>
+                  <p class="light">(무형문화유산 통합 서비스 이용권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 관련 체험 상품)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 추첨권</p>
+                  <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>지적소유권</strong> 2차 가공</p>
+                  <p class="light">(보유 NFT에 대한 지적 소유권)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card lightblue">
+              <img class="star" src="../resource/img/pc/benefits/lightblue.png">
+              <p class="top">Grade 4</p>
+              <div class="icons mb">
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <p class="light dot"><strong>SHOP 이용권</strong></p>
+                  <p class="light">(무형문화유산 통합 서비스 이용권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 관련 체험 상품)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 추첨권</p>
+                  <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
+                </div>
+              </div>
+            </div>
+            <div class="card pink">
+              <img class="star" src="../resource/img/pc/benefits/pink.png">
+              <p class="top">Grade 5</p>
+              <div class="icons mb">
+                <i class="guardians"></i>
+                <i class="guardians"></i>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <p class="light dot"><strong>SHOP 이용권</strong></p>
+                  <p class="light">(무형문화유산 통합 서비스 이용권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 관련 체험 상품)</p>
+                </div>
+              </div>
+            </div>
+            <div class="card green">
+              <img class="star" src="../resource/img/pc/benefits/green.png">
+              <p class="top">Grade 6</p>
+              <div class="icons mb">
+                <i class="guardians"></i>
+              </div>
+              <div class="info">
+                <div class="item">
+                  <p class="light dot"><strong>SHOP 이용권</strong></p>
+                  <p class="light">(무형문화유산 통합 서비스 이용권)</p>
+                </div>
+                <div class="item">
+                  <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                  <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000" class="bottom">단, 무형유산 ‘탈춤’의 유네스코 등재 기원축제는 모든 탈로워 홀더에게 입장권 지급됩니다.<br>관광바우처는 등급별 관련 없이 연 2회 제공됩니다.<br><strong>원화 기부의 경우 기부금(월 2만/3만/5만)에 따라 4-6등급의 멤버십 혜택이 적용됩니다.</strong></p>
+        <div class="buttons">
+          <p>원화결제 (기부)</p>
+          <p>이더리움 결제</p>
         </div>
       </div>
     </section>
-    <section class="benefit">
+    <section class="benefit__mo benefitsMo">
       <div class="title">
         <div class="underline">
           <p class="luckiest hover-rotate">
@@ -334,15 +866,15 @@
           </p>
         </div>
       </div> 
-      <p class="content medium">Benefits by membership grade can be changed later, and changes will be notified through the notice.</p>
-      <p class="content bold">Membership benefits of grades 4 to 6 will be applied to those who through Korean won donations.</p>
+      <p class="content light">멤버십 등급별 혜택(NFT 조합에 따라 제공)은 추후 변동될 수 있으며,<br>변동사항은 공지를 통해 안내됩니다.</p>
+      <p class="content bold">원화 기부를 통해 탈로워에 가입한신<br>분들께는 기부금에 따라 4-6등급의 멤버십<br>혜택이 제공됩니다.</p>
       <div class="caption">
         <p><i class="mrtal"></i>미스터 탈</p>
         <p><i class="guardians"></i>가디언즈</p>
       </div>
       <div class="cards">
-        <div class="column">
-          <div class="card yellow">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card yellow">
             <img class="star" src="../resource/img/pc/benefits/yellow.png">
             <p class="top">Grade 1</p>
             <div class="icons">
@@ -357,36 +889,36 @@
             </div>
             <div class="info">
               <div class="item">
-                <p class="medium">shop pass</p>
-                <p class="light"></p>
+                <p class="light dot"><strong>SHOP 이용권</strong></p>
+                <p class="light">(무형문화유산 통합 서비스 이용권)</p>
               </div>
               <div class="item">
-                <p class="medium">Tour voucher</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
               </div>
               <div class="item">
-                <p class="medium">One Day Class pass</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                <p class="light">(무형문화유산 관련 체험 상품)</p>
               </div>
               <div class="item">
-                <p class="medium">invitation to perform in Korea</p>
-                <p class="light">(VIP invitation)</p>
+                <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 입장권</p>
+                <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
               </div>
               <div class="item">
-                <p class="medium">NFT IIP (Intellectual Property)</p>
-                <p class="light">(secondary processing)</p>
+                <p class="light dot"><strong>지적소유권</strong> 2차 가공</p>
+                <p class="light">(보유 NFT에 대한 지적 소유권)</p>
               </div>
               <div class="item">
-                <p class="medium">craft subscription</p>
-                <p class="light">(Draw lots)</p>
+                <p class="light dot"><strong>공예품 구독</strong> 추첨권</p>
+                <p class="light">(무형문화유산 활용 기념품 전달)</p>
               </div>
               <div class="item">
-                <p class="medium">invitation perform</p>
-                <p class="light">(Draw lots)</p>
+                <p class="light dot"><strong>해외공연 / 전시</strong> 추첨권</p>
+                <p class="light">(무형문화유산 홍보를 위한 해외 공연/전시 참석을 위한 유류비 지원)</p>
               </div>
             </div>
           </div>
-          <div class="card orange">
+          <div class="swiper-slide card orange">
             <img class="star" src="../resource/img/pc/benefits/orange.png">
             <p class="top">Grade 2</p>
             <div class="icons">
@@ -400,36 +932,32 @@
             </div>
             <div class="info">
               <div class="item">
-                <p class="medium">shop pass</p>
-                <p class="light"></p>
+                <p class="light dot"><strong>SHOP 이용권</strong></p>
+                <p class="light">(무형문화유산 통합 서비스 이용권)</p>
               </div>
               <div class="item">
-                <p class="medium">Tour voucher</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
               </div>
               <div class="item">
-                <p class="medium">One Day Class pass</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                <p class="light">(무형문화유산 관련 체험 상품)</p>
               </div>
               <div class="item">
-                <p class="medium">invitation to perform in Korea</p>
-                <p class="light">(VIP invitation)</p>
+                <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 입장권</p>
+                <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
               </div>
               <div class="item">
-                <p class="medium">NFT IIP (Intellectual Property)</p>
-                <p class="light">(secondary processing)</p>
+                <p class="light dot"><strong>지적소유권</strong> 2차 가공</p>
+                <p class="light">(보유 NFT에 대한 지적 소유권)</p>
               </div>
               <div class="item">
-                <p class="medium">craft subscription</p>
-                <p class="light">(Draw lots)</p>
-              </div>
-              <div class="item">
-                <p class="medium">invitation perform</p>
-                <p class="light">(Draw lots)</p>
+                <p class="light dot"><strong>공예품 구독</strong> 추첨권</p>
+                <p class="light">(무형문화유산 활용 기념품 전달)</p>
               </div>
             </div>
           </div>
-          <div class="card blue">
+          <div class="swiper-slide card blue">
             <img class="star" src="../resource/img/pc/benefits/blue.png">
             <p class="top">Grade 3</p>
             <div class="icons">
@@ -442,30 +970,28 @@
             </div>
             <div class="info">
               <div class="item">
-                <p class="medium">shop pass</p>
-                <p class="light"></p>
+                <p class="light dot"><strong>SHOP 이용권</strong></p>
+                <p class="light">(무형문화유산 통합 서비스 이용권)</p>
               </div>
               <div class="item">
-                <p class="medium">Tour voucher</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
               </div>
               <div class="item">
-                <p class="medium">One Day Class pass</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                <p class="light">(무형문화유산 관련 체험 상품)</p>
               </div>
               <div class="item">
-                <p class="medium">invitation to perform in Korea</p>
-                <p class="light">(VIP invitation)</p>
+                <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 추첨권</p>
+                <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
               </div>
               <div class="item">
-                <p class="medium">NFT IIP (Intellectual Property)</p>
-                <p class="light">(secondary processing)</p>
+                <p class="light dot"><strong>지적소유권</strong> 2차 가공</p>
+                <p class="light">(보유 NFT에 대한 지적 소유권)</p>
               </div>
             </div>
           </div>
-        </div>
-        <div class="column">
-          <div class="card lightblue">
+          <div class="swiper-slide card lightblue">
             <img class="star" src="../resource/img/pc/benefits/lightblue.png">
             <p class="top">Grade 4</p>
             <div class="icons mb">
@@ -475,24 +1001,24 @@
             </div>
             <div class="info">
               <div class="item">
-                <p class="medium">shop pass</p>
-                <p class="light"></p>
+                <p class="light dot"><strong>SHOP 이용권</strong></p>
+                <p class="light">(무형문화유산 통합 서비스 이용권)</p>
               </div>
               <div class="item">
-                <p class="medium">Tour voucher</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
               </div>
               <div class="item">
-                <p class="medium">One Day Class pass</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                <p class="light">(무형문화유산 관련 체험 상품)</p>
               </div>
               <div class="item">
-                <p class="medium">invitation to perform in Korea</p>
-                <p class="light">(VIP invitation)</p>
+                <p class="light dot"><strong>국내 공연 / 전시</strong> VIP 추첨권</p>
+                <p class="light">(무형문화유산 홍보를 위한 국내 공연/전시)</p>
               </div>
             </div>
           </div>
-          <div class="card pink">
+          <div class="swiper-slide card pink">
             <img class="star" src="../resource/img/pc/benefits/pink.png">
             <p class="top">Grade 5</p>
             <div class="icons mb">
@@ -501,20 +1027,20 @@
             </div>
             <div class="info">
               <div class="item">
-                <p class="medium">shop pass</p>
-                <p class="light"></p>
+                <p class="light dot"><strong>SHOP 이용권</strong></p>
+                <p class="light">(무형문화유산 통합 서비스 이용권)</p>
               </div>
               <div class="item">
-                <p class="medium">Tour voucher</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
               </div>
               <div class="item">
-                <p class="medium">One Day Class pass</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>원데이클래스</strong> 연 2회</p>
+                <p class="light">(무형문화유산 관련 체험 상품)</p>
               </div>
             </div>
           </div>
-          <div class="card green">
+          <div class="swiper-slide card green">
             <img class="star" src="../resource/img/pc/benefits/green.png">
             <p class="top">Grade 6</p>
             <div class="icons mb">
@@ -522,63 +1048,95 @@
             </div>
             <div class="info">
               <div class="item">
-                <p class="medium">shop pass</p>
-                <p class="light"></p>
+                <p class="light dot"><strong>SHOP 이용권</strong></p>
+                <p class="light">(무형문화유산 통합 서비스 이용권)</p>
               </div>
               <div class="item">
-                <p class="medium">Tour voucher</p>
-                <p class="light">(2 times a year)</p>
+                <p class="light dot"><strong>관광바우쳐</strong> 연 2회</p>
+                <p class="light">(무형문화유산 소재지 내 지역화폐)</p>
               </div>
             </div>
           </div>
         </div>
+        <i class="button prev"></i>
+        <i class="button next"></i>
       </div>
-      <p class="bottom">
-        “2022 KOREA Talowin-day (scheduled for the end of the October)” ‘sadmission tickets will be provided to All tallower holders.<br>
-        (* which  festival pray for UNESCO’s registration of the intangible heritage ‘Talchum’ )<br>
-        Tour vouchers are provided twice a year regardless of grade.<br>
-        If you donate in Korean won, membership benefits of grades 4-6 will be applied depending on the donation<br>
-        <strong>(* donation 20,000 won / 30,000 won / 50,000 won per month)</strong>
-      </p>
+      <p class="bottom">단, 무형유산 ‘탈춤’의 유네스코 등재 기원축제는<br>모든 탈로워 홀더에게 입장권 지급됩니다.<br><br>관광바우처는 등급별 관련 없이 연 2회 제공됩니다.<br><br><strong>원화 기부의 경우 기부금(월 2만/3만/5만)에 따라<br>4-6등급의 멤버십 혜택이 적용됩니다.</strong></p>
       <div class="buttons">
-        <p>Go to the opensea</p>
-        <p>Buy the Ethereum</p>
+        <p>원화 결제 (기부)</p>
+        <p>이더리움 결제</p>
       </div>
     </section>
     <section class="teams">
-      <div class="title">
-        <div class="underline">
-          <p class="luckiest hover-rotate">
-            BENEFIT
-          </p>
-        </div>
-      </div> 
-      <p class="content">
-        This project will be led by the <strong>social venture</strong> and <strong>non-profit start-up,</strong><br>
-        <strong>the YBSEDU Social Cooperative.</strong>
-      </p>
-      <div class="container">
-        <div class="box">
-          <img src="../resource/img/pc/teams/m_logo.jpg" />
-          <img src="../resource/img/pc/teams/google_logo.jpg" />
-          <img src="../resource/img/pc/teams/ramda256.jpg" />
-          <div class="circle">Sponsor</div>
-        </div>
-        <div class="box center">
-          <img src="../resource/img/pc/teams/ybs_logo.jpg" />
-          <p>YBSEDU Social<br>Cooperative</p>
-          <div class="circle">Operating</div>
-        </div>
-        <div class="box">
-          <img src="../resource/img/pc/teams/ybs_logo.jpg" />
-          <img src="../resource/img/pc/teams/ybs_logo.jpg" />
-          <img src="../resource/img/pc/teams/ybs_logo.jpg" />
-          <img src="../resource/img/pc/teams/ybs_logo.jpg" />
-          <div class="circle">Partner</div>
+      <div class="maxwidth">
+        <div class="title">
+          <div class="underline">
+            <p class="luckiest hover-rotate">
+              TEAMS
+            </p>
+          </div>
+        </div> 
+        <p class="content"><strong>문화유산 활용 전문 소셜벤처, 비영리 스타트업</strong><br><strong>와이비에스에듀 사회적협동조합</strong>이 프로젝트를 이끌어갑니다.</p>
+        <div class="container">
+          <div class="box">
+            <img src="../resource/img/pc/teams/m_logo.jpg" />
+            <img src="../resource/img/pc/teams/google_logo.jpg" />
+            <img src="../resource/img/pc/teams/ramda256.png" />
+            <div class="circle">후원</div>
+          </div>
+          <div class="box center">
+            <img src="../resource/img/pc/teams/ybs_logo.jpg" />
+            <div class="circle">운영주체</div>
+          </div>
+          <div class="box">
+            <p><img src="../resource/img/pc/teams/gm.png" />평양검무 보존회</p>
+            <p><span class="hidden"></span>강령탈춤 보존회</p>
+            <p><img src="../resource/img/pc/teams/han.png" />한반도 개발연합</p>
+            <p><img src="../resource/img/pc/teams/hsu.png" />한성대학교 부설<br>디자인아트교육원</p>
+            <div class="circle">파트너</div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="news">
+    <section class="teams__mo teamsMo">
+      <div class="title">
+        <div class="underline">
+          <p class="luckiest hover-rotate">
+            TEAMS
+          </p>
+        </div>
+      </div> 
+      <p class="content"><strong>문화유산 활용 전문<br>소셜벤처, 비영리 스타트업</strong><br><strong>와이비에스에듀 사회적협동조합</strong>이<br>프로젝트를 이끌어갑니다.</p>
+      <div class="container">
+        <p class="item purple">
+          <span>운영주체</span>
+          <span>▼</span>
+        </p>
+        <div class="box">
+          <img src="../resource/img/pc/teams/ybs_logo.jpg" />
+        </div>
+        <p class="item blue">
+          <span>후원</span>
+          <span>▼</span>
+        </p>
+        <div class="box">
+          <img src="../resource/img/pc/teams/m_logo.jpg" />
+          <img src="../resource/img/pc/teams/google_logo.jpg" />
+          <img src="../resource/img/pc/teams/ramda256.png" />
+        </div>
+        <p class="item blue">
+          <span>파트너</span>
+          <span>▼</span>
+        </p>
+        <div class="box">
+          <p><img src="../resource/img/pc/teams/gm.png" />평양검무 보존회</p>
+          <p><span class="hidden"></span>강령탈춤 보존회</p>
+          <p><img src="../resource/img/pc/teams/han.png" />한반도 개발연합</p>
+          <p><img src="../resource/img/pc/teams/hsu.png" />한성대학교 부설<br>디자인아트교육원</p>
+        </div>
+      </div>
+    </section>
+    <section class="news newsMo">
       <div class="title">
         <div class="underline">
           <p class="luckiest hover-rotate">
@@ -668,12 +1226,25 @@
       </div>
     </section>
     <section class="footer">
-      <img src="../resource/img/pc/footer/f_lpgp.png" />
+      <img src="../resource/img/pc/header/header_logo.png" />
       <p>
         와이비에스에듀사회적협동조합 이사장 : 서진성 서울특별시 송파구 가락로 234 힐빌딩 2층 (우)05644<br>
+        사업자 등록번호: 362-82-00302 대표전화: 02-6952-6783<br>
         Copyright© 2020 와이비에스에듀 사회적협동조합 All Rights Reserve
       </p>
     </section>
+    <section class="footer__mo">
+      <img src="../resource/img/pc/header/header_logo.png" />
+      <p>
+        와이비에스에듀사회적협동조합 이사장 : 서진성 서울특별시 송파구 가락로 234 힐빌딩 2층 (우)05644<br>
+        사업자 등록번호: 362-82-00302 대표전화: 02-6952-6783<br>
+        Copyright© 2020 와이비에스에듀 사회적협동조합 All Rights Reserve
+      </p>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
   </body>
 </html>
        

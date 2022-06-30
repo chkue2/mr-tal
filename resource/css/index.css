@@ -1,11 +1,20 @@
 header.mo{
   display: none;
 }
+.sidemenu{
+  display: none;
+}
+.langmenu{
+  display: none;
+}
+.moremission{
+  display: none;
+}
 header.pc{
   background-color: rgba(112, 133, 206, 0.49);
   width: 100vw;
   height: 90px;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9;
 }
@@ -23,10 +32,20 @@ header.pc .logo{
   width: 115px;
   height: 30px;
   display: block;
+  cursor: pointer;
 }
 header.pc .logo img{
   width: 100%;
   height: 100%;
+}
+header.pc .logo .on{
+  display: none;
+}
+header.pc .logo:hover .off{
+  display: none;
+}
+header.pc .logo:hover .on{
+  display: block;
 }
 header.pc .menu{
   display: flex;
@@ -85,13 +104,16 @@ header.pc .menu .sub .sub__item.global{
   border: 2px solid #707070;
   box-shadow: 0px 3px 6px #00000029;
   transition: all .3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header.pc .menu .sub .sub__item.global:hover{
   background-color: rgba(252, 124, 197, 0.5);
 }
 header.pc .menu .sub .sub__item.global img{
-  width: 100%;
-  height: 100%;
+  width: 30px;
+  height: 30px;
 }
 header.pc .menu .sub .sub__item.global + .list{
   padding: 16px 0;
@@ -129,7 +151,7 @@ header.pc .menu .list a + a{
 .social__mission{
   background: url(../img/pc/social_mission/s_bg.jpg) no-repeat center/cover;
   position: relative;
-  padding-top: 132px;
+  padding-top: 212px;
 }
 .social__mission .clude{
   position: absolute;
@@ -153,7 +175,7 @@ header.pc .menu .list a + a{
   border-radius: 10px;
   position: relative;
   z-index: 3;
-  padding: 119px 250px;
+  padding: 119px 180px;
   backdrop-filter: blur(22px) opacity(33%);
 -webkit-backdrop-filter: blur(22px) opacity(33%);
 }
@@ -170,6 +192,7 @@ header.pc .menu .list a + a{
   color: #463F52;
   font-family: GmarketSansTTFLight, sans-serif;
   text-align: center;
+  line-height: 50px;
 }
 .social__mission .container .content strong{
   font-size: 30px;
@@ -196,6 +219,7 @@ header.pc .menu .list a + a{
   -webkit-backdrop-filter: blur(15px);
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 140px;
   cursor: pointer;
 }
 .social__mission .accept:hover{
@@ -240,9 +264,10 @@ header.pc .menu .list a + a{
   -webkit-text-stroke: 2px black;
 }
 .universe .content{
-  font-family: GmarketSansTTFMedium, sans-serif;
+  font-family: GmarketSansTTFLight, sans-serif;
   text-align: right;
   font-size: 40px;
+  line-height: 54px;
 }
 .universe .carton{
   max-width: 1920px;
@@ -298,6 +323,7 @@ header.pc .menu .list a + a{
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 63px 200px 142px 200px;
+  position: relative;
 }
 .universe .carton .container img{
   width: 100%;
@@ -308,14 +334,23 @@ header.pc .menu .list a + a{
 .universe .carton .text{
   width: 100%;
   height: 340px;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   font-family: GmarketSansTTFMedium, sans-serif;
   font-size: 30px;
+  position: relative;
 }
 .universe .carton .text strong{
   font-family: GmarketSansTTFBold, sans-serif;
   font-size: 30px;
+}
+.universe .carton .page{
+  font-family: GmarketSansTTFMedium, sans-serif;
+  font-size: 30px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .universe .carton .swiper-slide.swiper-slide-active{
   opacity: 1;
@@ -359,25 +394,38 @@ header.pc .menu .list a + a{
   -webkit-text-stroke: 2px black;
 }
 .funding .content{
-  font-family: GmarketSansTTFMedium, sans-serif;
+  font-family: GmarketSansTTFLight, sans-serif;
   text-align: left;
   font-size: 40px;
+  line-height: 70px;
 }
 .funding .content strong{
   font-family: GmarketSansTTFBold, sans-serif;
   text-align: left;
   font-size: 40px;
 }
+.funding .content + .content{
+  margin-top: 40px;
+}
 .funding .subcontent{
-  margin-top: 55px;
+  margin-top: 82px;
   font-family: GmarketSansTTFMedium, sans-serif;
   text-align: left;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 50px;
 }
 .funding .swiper-container{
   display: flex;
   justify-content: space-between;
   margin-top: 200px;
+  position: relative;
+}
+.funding .bg-circle{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .funding .left-swiper{
   height: 1025px;
@@ -394,15 +442,20 @@ header.pc .menu .list a + a{
 .funding .swiper__title{
   font-family: GmarketSansTTFBold, sans-serif;
   text-align: left;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.funding .swiper__title strong{
+  font-family: GmarketSansTTFBold, sans-serif;
+  text-align: left;
   font-size: 50px;
-  margin-bottom: 43px;
 }
 .funding .swiper__content{
   font-family: GmarketSansTTFMedium, sans-serif;
   text-align: left;
   font-size: 30px;
   line-height: 50px;
-  margin-bottom: 52px;
+  margin-bottom: 25px;
 }
 .funding .swiper__content strong{
   font-family: GmarketSansTTFBold, sans-serif;
@@ -432,41 +485,65 @@ header.pc .menu .list a + a{
   background-color: #01FC9F;
 }
 .funding .right-swiper{
-  height: 975px;
+  height: 1000px;
   overflow: hidden;
   flex:1 ;
 }
 .funding .right-swiper .swiper-slide{
+  height: 700px;
   position: relative;
-  padding-left: 50%;
-  transition: all .3s ease-in-out;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.funding .right-swiper .swiper-slide.swiper-slide-prev{
+  justify-content: flex-end;
+}
+.funding .right-swiper .swiper-slide.swiper-slide-next{
+  justify-content: flex-start;
 }
 .funding .right-swiper .swiper-slide img{
-  width: 180px;
-  height: 180px;
+  width: 476px;
+  height: 476px;
+  border-radius: 50%;
+}
+.funding .right-swiper .swiper-slide .noimage{
+  width: 476px;
+  height: 476px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   transition: all .3s ease-in-out;
+  background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #01FC9F 100%) 0% 0% no-repeat padding-box;
+  font-size: 50px;
+  color: #463F52;
 }
 .funding .right-swiper .swiper-slide.swiper-slide-active{
   padding-left: 0;
 }
-.funding .right-swiper .swiper-slide.swiper-slide-active img{
-  width: 476px;
-  height: 476px;
-}
 .funding .right-swiper .swiper-slide .info{
   width: 630px;
-  height: 120px;
   background-color: #01FC9F;
   font-family: GmarketSansTTFLight, sans-serif;
   font-size: 30px;
   text-align: center;
   display: none;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  padding: 20px;
+  text-align: left;
+  margin-top: 50px;
 }
 .funding .right-swiper .swiper-slide.swiper-slide-active .info{
   display: flex;
+}
+.funding .hidden{
+  visibility: hidden;
+}
+.funding .none{
+  display: none;
 }
 .roadmap__mo{
   display: none;
@@ -578,8 +655,7 @@ header.pc .menu .list a + a{
   width: 36px;
   height: 36px;
   background: url(../img/pc/roadmap/download-2-fill.png) no-repeat center/cover;
-  position: absolute;
-  left: 30px;
+  margin-right: 10px;
 }
 .benefit__mo{
   display: none;
@@ -599,39 +675,41 @@ header.pc .menu .list a + a{
   color: #FC7CC5;
   -webkit-text-stroke: 2px black;
 }
-.benefit .content.medium{
-  font-family: GmarketSansTTFMedium, sans-serif;
+.benefit .content.light{
+  font-family: GmarketSansTTFLight, sans-serif;
   font-size: 40px;
   line-height: 70px;
 }
 .benefit .content.bold{
   font-family: GmarketSansTTFBold, sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 70px;
   margin-bottom: 140px;
 }
 .benefit .caption{
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   gap: 54px;
   margin-bottom: 42px;
+  padding-left: 120px;
 }
 .benefit .caption p{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 8px;
+  font-family: GmarketSansTTFMedium, sans-serif;
+  font-size: 20px;
 }
 .benefit .mrtal{
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(../img/pc/benefits/mrtal.png) no-repeat center/cover;
 }
 .benefit .guardians{
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(../img/pc/benefits/guardians.png) no-repeat center/cover;
 }
 .benefit .cards{
@@ -644,13 +722,19 @@ header.pc .menu .list a + a{
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  padding: 0 120px;
 }
 .benefit .cards .column .card{
   flex: 1;
-  min-height: 1035px;
+  min-height: 700px;
   border-radius: 20px;
   border: 3px solid #000000;
   position: relative;
+}
+.benefit .cards .mrtal,
+.benefit .cards .guardians{
+  width: 30px;
+  height: 30px;
 }
 .benefit .cards .column .card.yellow{
   background-color: #FEFEC0;
@@ -671,8 +755,8 @@ header.pc .menu .list a + a{
   background-color: #C7F6E0;
 }
 .benefit .cards .column .card .star{
-  width: 240px;
-  height: 240px;
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 0;
   left: 50%;
@@ -681,10 +765,10 @@ header.pc .menu .list a + a{
 }
 .benefit .cards .column .card .top{
   font-family: GmarketSansTTFBold, sans-serif;
-  margin-top: 140px;
-  font-size: 40px;
+  margin-top: 50px;
+  font-size: 25px;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 38px;
   position: relative;
   z-index: 3;
 }
@@ -712,29 +796,25 @@ header.pc .menu .list a + a{
   align-items: center;
   padding: 0 54px;
 }
-.benefit .cards .column .card .info .item .medium{
-  font-family: GmarketSansTTFMedium, sans-serif;
-  font-size: 30px;
-  padding-left: 20px;
-}
 .benefit .cards .column .card .info .item .light{
   font-family: GmarketSansTTFLight, sans-serif;
-  font-size: 30px;
-  padding-left: 20px;
+  font-size: 18px;
+  padding-left: 45px;
+  line-height: 30px;
 }
-.benefit .cards .column .card .info .item .light::before{
+.benefit .cards .column .card .info .item .light strong{
+  font-family: GmarketSansTTFMedium, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.benefit .cards .column .card .info .item p:not(.dot)::before{
   visibility: hidden;
-}
-.benefit .cards .column .card .info .item + .item{
-  margin-top: 30px;
-}
-.benefit .bottom{
-  margin-top: 215px;
 }
 .benefit .bottom{
   font-family: GmarketSansTTFLight, sans-serif;
   font-size: 30px;
   line-height: 60px;
+  margin-top: 198px;
 }
 .benefit .bottom strong{
   font-family: GmarketSansTTFMedium, sans-serif;
@@ -742,7 +822,7 @@ header.pc .menu .list a + a{
   line-height: 60px;
 }
 .benefit .buttons{
-  margin-top: 100px;
+  margin-top: 300px;
   display: flex;
   justify-content: center;
   gap: 52px;
@@ -809,7 +889,7 @@ header.pc .menu .list a + a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   background-color: #ffffff;
   border: 3px solid #000000;
   border-radius: 20px;
@@ -841,12 +921,27 @@ header.pc .menu .list a + a{
   background-color: #8C7DEA;
   font-size: 30px;
 }
+.teams .container .box img{
+  height: 50px;
+}
 .teams .container .box p{
   font-family: GmarketSansTTFMedium, sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 30px;
-  text-align: center;
-
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teams .container .box p img{
+  margin-right: 7px;
+}
+.teams .container .box p .hidden{
+  display: block;
+  width: 50px;
+  height: 50px;
+  visibility: hidden;
+  margin-right: 7px;
 }
 .news{
   padding: 170px 175px 140px 175px;

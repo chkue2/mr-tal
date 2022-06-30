@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #B4C2E7;
-    position: sticky;
+    position: fixed;
     padding: 0 25px;
     top: 0;
     z-index: 9;
@@ -28,12 +28,233 @@
   header.mo img{
     height: 35px;
   }
+  .sidemenu{
+    width: 100%;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #99E2FF 53%, #9AE2FF 58%, #ACBAE2 100%) 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .sidemenu.on{
+    display: flex;
+  }
+  .sidemenu p{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    background-color: #ABE7FF;
+  }
+  .sidemenu .logo img{
+    width: auto;
+    height: 25px;
+  }
+  .sidemenu .menu{
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    -webkit-text-stroke: 1px black;
+  }
+  .sidemenu .logo{
+    border-radius: 10px 10px 0 0;
+  }
+  .sidemenu .link img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .sidemenu p + p{
+    border-top: .3px solid #000000; 
+  }
+  .sidemenu .link a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-family: GmarketSansTTFLight, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 17px;
+  }
+  .sidemenu .close__button {
+    background-color: #ABE7FF;
+  }
+  .sidemenu .close__button p{
+    height: 42px;
+    background-color: #7FA3BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-family: GmarketSansTTFLight, sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  .langmenu{
+    width: 100%;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #99E2FF 53%, #9AE2FF 58%, #ACBAE2 100%) 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    display: none;
+  }
+  .langmenu.on{
+    display: block;
+  }
+  .langmenu .container{
+    position: relative;
+    height: 100%;
+  }
+  .langmenu .container .wrapper{
+    width: calc(100% - 160px);
+    height: 165px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 17px;
+  }
+  .langmenu .container .wrapper .line{
+    width: 100%;
+    height: 0.3px;
+    background-color: #000000;
+  }
+  .langmenu .container .wrapper a{
+    width: 100%;
+    line-height: 50px;
+    font-family: GmarketSansTTFMedium, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  .langmenu .container .clude-1{
+    width: 189px;
+    bottom: 230px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  .langmenu .container .clude-2{
+    width: 187px;
+    bottom: 100px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .langmenu .container .clude__bottom{
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    object-fit: cover;
+  }
+  .moremission{
+    width: 100%;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #99E2FF 53%, #9AE2FF 58%, #ACBAE2 100%) 0% 0% no-repeat padding-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    display: none;
+  }
+  .moremission.on{
+    display: block;
+  }
+  .moremission .container{
+    position: relative;
+    height: 100%;
+    padding: 0 20px;
+    overflow-y: auto;
+  }
+  .moremission .container .moremission__close{
+    width: 40px;
+    height: 40px;
+    margin-top: 150px;
+    margin-bottom: 22px;
+    position: fixed;
+    top: 0;
+    left: 20px;
+  }
+  .moremission .container .clude-1{
+    width: 189px;
+    bottom: 230px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  .moremission .container .clude-2{
+    width: 187px;
+    bottom: 100px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .moremission .container .clude__bottom{
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    object-fit: cover;
+  }
+  .moremission .container p{
+    font-family: GmarketSansTTFLight, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .moremission .container p.mt{
+    margin-top: 210px;
+  }
+  .moremission .container p strong{
+    font-family: GmarketSansTTFBold, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .moremission .container p + p{
+    margin-top: 30px;
+  }
+  .moremission .container .accept{
+    width: 123px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #547196;
+    font-family: GmarketSansTTFMedium, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 100px auto 200px;
+  }
   .social__mission{
     display: none;
   }
   .social__mission__mo{
     display: block;
-    padding: 95px 25px 175px;
+    padding: 175px 25px 175px;
     background: transparent linear-gradient(180deg, #FFFFFF 0%, #99E2FF 53%, #9AE2FF 58%, #ACBAE2 100%) 0% 0% no-repeat padding-box;
     position: relative;
   }
@@ -52,7 +273,7 @@
   .social__mission__mo .content{
     margin: 11px 0 25px;
     text-align: center;
-    font-family: GmarketSansTTFMedium, sans-serif;
+    font-family: GmarketSansTTFBold, sans-serif;
     font-size: 20px;
     line-height: 30px;
   }
@@ -171,7 +392,7 @@
     height: 80px;
     background-color: #ffffff;
     align-items: flex-start;
-    padding: 0px 45px 0px 20px;
+    padding: 0px 20px 0px 20px;
   }
   .universe__mo .carton .tab p.on strong{
     color: #8C7DEA;
@@ -180,12 +401,13 @@
     background-color: #ffffff;
     border-top-right-radius: 10px;
     padding: 20px;
+    padding-bottom: 60px;
   }
   .universe__mo .carton .container img{
     width: 100%;
     height: auto;
     border-radius: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 17px;
   }
   .universe__mo .carton .text{
     width: 100%;
@@ -194,10 +416,19 @@
     overflow-x: hidden;
     font-family: GmarketSansTTFLight, sans-serif;
     font-size: 15px;
+    line-height: 30px;
   }
   .universe__mo .carton .text strong{
     font-family: GmarketSansTTFMedium, sans-serif;
     font-size: 15px;
+  }
+  .universe__mo .carton .page{
+    font-family: GmarketSansTTFLight, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .universe__mo .carton .swiper-slide.swiper-slide-active{
     opacity: 1;
@@ -207,7 +438,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
     z-index: 5;
     cursor: pointer;
@@ -276,21 +507,40 @@
     height: 352px;
     border-radius: 50%;
   }
+  
+  .funding__mo .swiper-slide .noimage{
+    width: 352px;
+    height: 352px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #01FC9F 100%) 0% 0% no-repeat padding-box;
+    font-size: 50px;
+    color: #463F52;
+  }
   .funding__mo .swiper-slide .swiper__title{
     font-family: GmarketSansTTFBold, sans-serif;
     text-align: left;
     font-size: 20px;
     margin-bottom: 22px;
   }
+  .funding__mo .swiper-slide .swiper__title strong{
+    font-family: GmarketSansTTFBold, sans-serif;
+    text-align: left;
+    font-size: 25px;
+  }
   .funding__mo .swiper-slide .box__container{
-    padding: 0 35px;
+    width: 100%;
+    padding: 0 20px;
     margin: 30px 0 50px;
   }
   .funding__mo .swiper-slide .box{
-    padding: 20px 8px;
+    padding: 20px;
     background-color: #01FC9F;
     font-family: GmarketSansTTFLight, sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
   }
   .funding__mo .swiper-slide .swiper__content{
@@ -344,6 +594,9 @@
     background: url(../img/mo/universe/arrow_02.png) no-repeat center/cover;
     right: 0;
   }
+  .funding__mo .hidden{
+    visibility: hidden;
+  }
   .roadmap{
     display: none;
   }
@@ -382,6 +635,9 @@
     gap: 10px;
     position: relative;
     z-index: 2;
+    max-height: 0px;
+    transition: .5s max-height ease-in-out;
+    overflow: hidden;
   }
   .roadmap__mo .content .item{
     display: flex;
@@ -415,9 +671,12 @@
     background-color: #AEE2FE;
     font-size: 34px;
   }
+  .roadmap__mo .content .item.on + .row{
+    max-height: 999px;
+  }
   .roadmap__mo .content .row .item.basic{
     background-color: #ffffff;
-    padding: 30px 50px;
+    padding: 30px;
     min-height: 150px;
   }
   .roadmap__mo .content .row .item .title{
@@ -481,16 +740,17 @@
   .benefit__mo .content{
     padding: 0 20px;
   }
-  .benefit__mo .content.medium{
+  .benefit__mo .content.light{
     font-family: GmarketSansTTFLight, sans-serif;
     font-size: 20px;
     line-height: 30px;
   }
   .benefit__mo .content.bold{
-    font-family: GmarketSansTTFMedium, sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 67px;
+    font-family: GmarketSansTTFBold, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 21px;
+    margin-bottom: 63px;
   }
   .benefit__mo .mrtal{
     display: block;
@@ -504,6 +764,20 @@
     height: 19px;
     background: url(../img/pc/benefits/guardians.png) no-repeat center/cover;
   }
+  .benefit__mo .caption{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding-left: 20px;
+  }
+  .benefit__mo .caption p{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    font-family: GmarketSansTTFMedium, sans-serif;
+    font-size: 13px;
+  }
   .benefit__mo .cards{
     position: relative;
   }
@@ -512,8 +786,7 @@
     border-radius: 20px;
     border: 3px solid #000000;
     position: relative;
-    padding-bottom: 52px;
-    min-height: 720px;
+    min-height: 587px;
   }
   .benefit__mo .cards .card.yellow{
     background-color: #FEFEC0;
@@ -534,8 +807,8 @@
     background-color: #C7F6E0;
   }
   .benefit__mo .cards .card .star{
-    width: 156px;
-    height: 156px;
+    width: 84px;
+    height: 84px;
     position: absolute;
     top: 0;
     left: 50%;
@@ -544,10 +817,10 @@
   }
   .benefit__mo .cards .card .top{
     font-family: GmarketSansTTFBold, sans-serif;
-    margin-top: 82px;
-    font-size: 24px;
+    margin-top: 42px;
+    font-size: 21px;
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 18px;
     position: relative;
     z-index: 3;
   }
@@ -560,7 +833,7 @@
     margin-top: 5px;
   }
   .benefit__mo .cards .card .icons.mb{
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
   .benefit__mo .cards .card .info .item p::before{
     content: '';
@@ -568,28 +841,26 @@
     width: 5px;
     height: 5px;
     background-color: #000000;
-    margin-right: 20px;
+    margin-right: 7px;
   }
   .benefit__mo .cards .card .info .item p{
     display: flex;
     align-items: center;
     padding: 0 54px;
   }
-  .benefit__mo .cards .card .info .item .medium{
-    font-family: GmarketSansTTFMedium, sans-serif;
-    font-size: 18px;
-    padding-left: 33px;
-  }
   .benefit__mo .cards .card .info .item .light{
     font-family: GmarketSansTTFLight, sans-serif;
-    font-size: 18px;
-    padding-left: 33px;
+    font-size: 15px;
+    padding-left: 38px;
+    line-height: 25px;
   }
-  .benefit__mo .cards .card .info .item .light::before{
+  .benefit__mo .cards .card .info .item .light strong{
+    font-family: GmarketSansTTFMedium, sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .benefit__mo .cards .card .info .item p:not(.dot)::before{
     visibility: hidden;
-  }
-  .benefit__mo .cards .card .info .item + .item{
-    margin-top: 18px;
   }
   .benefit__mo .cards .button{
     width: 40px;
@@ -609,7 +880,7 @@
     right: 0;
   }
   .benefit__mo .bottom{
-    margin-top: 84px;
+    margin-top: 100px;
     padding: 0 20px;
   }
   .benefit__mo .bottom{
@@ -682,7 +953,7 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 32px;
+    margin-top: 61px;
   }
   .teams__mo .container .item{
     width: 100%;
@@ -717,6 +988,13 @@
     background-color: #ffffff;
     border-radius: 5px;
     position: relative;
+    padding: 0;
+    max-height: 0px;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+  }
+  .teams__mo .container .item.on + .box{
+    max-height: 999px;
     padding: 60px 0px;
   }
   .teams__mo .container .box p{
@@ -724,6 +1002,25 @@
     font-size: 25px;
     line-height: 30px;
     text-align: center;
+  }
+  .teams__mo .container .box img{
+    height: 50px;
+  }
+  .teams__mo .container .box p{
+    font-family: GmarketSansTTFMedium, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .teams__mo .container .box p img{
+    margin-right: 7px;
+  }
+  .teams__mo .container .box p .hidden{
+    display: none;
   }
   .news{
     padding: 0 20px 40px 20px;

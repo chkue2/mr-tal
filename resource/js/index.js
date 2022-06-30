@@ -19,9 +19,9 @@ $(document).ready(function(){
     direction: 'vertical',
     slidesPerView: 'auto',
     centeredSlides: true,
-    spaceBetween: 11,
+    spaceBetween: 50,
     loop: true,
-    loopedSlides: 5,  
+    loopedSlides: 6,  
     autoHeight: false,
     observer: true,
     observeParents: true,
@@ -31,10 +31,9 @@ $(document).ready(function(){
     direction: 'vertical',
     slidesPerView: 'auto',
     centeredSlides: true,
-    spaceBetween: 50,
     loop: true,
-    loopedSlides: 8,  
-    autoHeight: true,
+    loopedSlides: 6,  
+    autoHeight: false,
     observer: true,
     observeParents: true,
     on:{
@@ -97,3 +96,92 @@ $(document).on('click', '.news .list .item', function(){
     $(this).children('.top').addClass('on')
   }
 })
+
+$(document).on('click', 'header.pc .menu__item', function(){
+  const target = $(this).attr('id')
+  
+  document.querySelector(`.${target}`).scrollIntoView({behavior: 'smooth'})
+})
+
+$(document).on('click', 'header.mo .menu', function(){
+  toggleSideMenu()
+})
+$(document).on('click', '.sidemenu .close__button', function(){
+  toggleSideMenu()
+})
+$(document).on('click', '.sidemenu .logo', function(){
+  toggleSideMenu()
+  
+  document.querySelector(`.socialMissonMo`).scrollIntoView({behavior: 'smooth'})
+})
+$(document).on('click', '.sidemenu .menu', function(){
+  toggleSideMenu()
+
+  const target = $(this).attr('id')
+  
+  document.querySelector(`.${target}`).scrollIntoView({behavior: 'smooth'})
+})
+$(document).on('click', 'header.mo .lang', function(){
+  toggleLangMenu()
+})
+$(document).on('click', '.roadmapMo .item.color', function(){
+  if($(this).attr('class').split(' ').includes('on')){
+    $(this).removeClass('on')
+  } else {
+    $(this).addClass('on')
+  }
+})
+$(document).on('click', '.teamsMo .item', function(){
+  if($(this).attr('class').split(' ').includes('on')){
+    $(this).removeClass('on')
+  } else {
+    $(this).addClass('on')
+  }
+})
+const toggleSideMenu = () => {
+  const target = $('.sidemenu')
+  $('.langmenu').removeClass('on')
+  $('.moremission').removeClass('on')
+  if(target.attr('class').split(' ').includes('on')){
+    target.removeClass('on')
+  } else {
+    target.addClass('on')
+  }
+}
+const toggleLangMenu = () => {
+  const target = $('.langmenu')
+  $('.sidemenu').removeClass('on')
+  $('.moremission').removeClass('on')
+  if(target.attr('class').split(' ').includes('on')){
+    target.removeClass('on')
+  } else {
+    target.addClass('on')
+  }
+}
+const toggleAcceptMoreMission = () => {
+  const target = $('.moremission')
+  $('.sidemenu').removeClass('on')
+  $('.langmenu').removeClass('on')
+  if(target.attr('class').split(' ').includes('on')){
+    target.removeClass('on')
+  } else {
+    target.addClass('on')
+  }
+}
+
+const moveToUniverse = () => {
+  document.querySelector(`.universe`).scrollIntoView({behavior: 'smooth'})
+}
+const moveToUniverseMo = () => {
+  $('.moremission').removeClass('on')
+  document.querySelector(`.universeMo`).scrollIntoView({behavior: 'smooth'})
+}
+
+const moveToTop = () => {
+  $('.sidemenu').removeClass('on')
+  $('.langmenu').removeClass('on')
+  $('.moremission').removeClass('on')
+  $('html, body').stop().animate({
+    scrollTop: 0
+  })
+}

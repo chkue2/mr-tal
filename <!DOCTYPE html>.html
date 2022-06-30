@@ -11,21 +11,21 @@
     <meta property="twitter:description" content="Mr.TAL"/>
     <meta property="twitter:image" content="#"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./resource/css/reset.css" />
-    <link rel="stylesheet" href="./resource/css/index.css" />
-    <link rel="stylesheet" href="./resource/css/mo_index.css" />
+    <link rel="stylesheet" href="{{$template}}/img/resource/css/reset.css" />
+    <link rel="stylesheet" href="{{$template}}/img/resource/css/index.css" />
+    <link rel="stylesheet" href="{{$template}}/img/resource/css/mo_index.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="./resource/lib/jquery-3.5.1-slim.js"></script>
+    <script src="{{$template}}/img/resource/lib/jquery-3.5.1-slim.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./resource/js/index.js"></script>
+    <script src="{{$template}}/img/resource/js/index.js"></script>
   </head>
   <body>
     <header class="pc">
       <div class="container">
         <a class="logo" onclick="moveToTop()">
-          <img class="off" src="./resource/img/pc/header/header_logo.png" />
-          <img class="on" src="./resource/img/pc/header/header_logo_on.png" />
+          <img class="off" src="{{$template}}/img/resource/img/pc/header/header_logo.png" />
+          <img class="on" src="{{$template}}/img/resource/img/pc/header/header_logo_on.png" />
         </a>
         <div class="menu">
           <p class="menu__item" id="socialMission">SOCIAL MISSION</p>
@@ -48,7 +48,7 @@
           </div>
           <div class="sub">
             <p class="sub__item global">
-              <img src="./resource/img/pc/header/global-line.png" />
+              <img src="{{$template}}/img/resource/img/pc/header/global-line.png" />
             </p>
             <p class="list">
               <a href="/">KOR</a>
@@ -60,11 +60,11 @@
     </header>
     <header class="mo">
       <i class="menu"></i>
-      <img src="./resource/img/pc/header/header_logo_on.png" onclick="moveToTop()" />
+      <img src="{{$template}}/img/resource/img/pc/header/header_logo_on.png" onclick="moveToTop()" />
       <i class="lang"></i>
     </header>
     <section class="sidemenu">
-      <p class="logo"><img src="./resource/img/mo/header/logo.png" /></p>
+      <p class="logo"><img src="{{$template}}/img/resource/img/mo/header/logo.png" /></p>
       <p class="menu luckiest" id="socialMissonMo">SOCIAL MISSION</p>
       <p class="menu luckiest" id="universeMo">UNIVERSE</p>
       <p class="menu luckiest" id="fundingMo">FUNDING</p>
@@ -75,19 +75,19 @@
       <p class="menu luckiest" id="shopMo">SHOP</p>
       <p class="link">
         <a class="blank">
-          <img src="./resource/img/mo/menu/discord-line.png" />
+          <img src="{{$template}}/img/resource/img/mo/menu/discord-line.png" />
           DISCORD
         </a>
       </p>
       <p class="link">
         <a href="http://www.twitter.com/tallower2022" target="_blank">
-          <img src="./resource/img/mo/menu/twitter-line.png" />
+          <img src="{{$template}}/img/resource/img/mo/menu/twitter-line.png" />
           TWITTER
         </a>
       </p>
       <p class="link">
         <a href="href="http://www.instagram.com/tallower" target="_blank">
-          <img src="./resource/img/mo/menu/instagram-line.png" />
+          <img src="{{$template}}/img/resource/img/mo/menu/instagram-line.png" />
           INSTAGRAM
         </a>
       </p>
@@ -102,14 +102,14 @@
           <p class="line"></p>
           <a href="/base/eng/">ENG</a>
         </div>
-        <img src="./resource/img/pc/social_mission/cloud.png" class="clude clude-1">
-        <img src="./resource/img/pc/social_mission/cloud.png" class="clude clude-2">
-        <img src="./resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
       </div>
     </section>
     <section class="moremission">
       <div class="container">
-        <img class="moremission__close" src="./resource/img/mo/universe/arrow_01.png" onclick="toggleAcceptMoreMission()">
+        <img class="moremission__close" src="{{$template}}/img/resource/img/mo/universe/arrow_01.png" onclick="toggleAcceptMoreMission()">
         <p class="mt">
           <strong>대한민국 무형문화유산의 ¼가</strong> 생활고 등 어려움으로 <strong>단절 위기</strong>에 처해 있다는 사실을 아시나요?<br>수백 년 동안 이어져 온 우리의 문화가 하루아침에 사라져 버릴 수도 있습니다.
         </p>
@@ -121,9 +121,9 @@
         </p>
         <p>‘탈로워’가 되어 무형문화유산 전승자 발굴, 보유단체의 해외공연 후원 등<br><strong>무형문화유산 보존 서포터즈가 되어주세요.</strong></p>
         <a class="accept">수락하기</a>
-        <img src="./resource/img/pc/social_mission/cloud.png" class="clude clude-1">
-        <img src="./resource/img/pc/social_mission/cloud.png" class="clude clude-2">
-        <img src="./resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
       </div>
     </section>
     <section class="socialMission social__mission">
@@ -142,9 +142,9 @@
             ACCEPT
           </p>
         </div>
-        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200" src="./resource/img/pc/social_mission/cloud.png" class="clude clude-1">
-        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400" src="./resource/img/pc/social_mission/cloud.png" class="clude clude-2">
-        <img src="./resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200" src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400" src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
       </section>
       <section class="social__mission__mo socialMissonMo">
         <div class="container">
@@ -159,9 +159,9 @@
             <p onclick="moveToUniverseMo()">ACCEPT</p>
           </div>
         </div>
-        <img src="./resource/img/pc/social_mission/cloud.png" class="clude clude-1">
-        <img src="./resource/img/pc/social_mission/cloud.png" class="clude clude-2">
-        <img src="./resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-1">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud.png" class="clude clude-2">
+        <img src="{{$template}}/img/resource/img/pc/social_mission/cloud_1.png" class="clude__bottom">
       </div>
     </section>
     <section class="universe">
@@ -188,7 +188,7 @@
                 </p>
               </div>
               <div class="container">
-                <img src="./resource/img/pc/universe/u_img_1.jpg">
+                <img src="{{$template}}/img/resource/img/pc/universe/u_img_1.jpg">
                 <div class="text">
                   2XXX,<br>a world where human emotions and culture are not respected.<br>All you can see is a tall building.<br><strong>There is no green color anywhere.</strong><br>In a world full of dust, people wearing oxygen mask respirators walk on the streets.
                 </div>
@@ -207,7 +207,7 @@
                 </p>
               </div>
               <div class="container">
-                <img src="./resource/img/pc/universe/u_img_2.jpg">
+                <img src="{{$template}}/img/resource/img/pc/universe/u_img_2.jpg">
                 <div class="text">
                   On your way home, you found a "UNDER construction" sign,<br>forcing you to <strong>go back the other way.</strong>
                 </div>
@@ -226,7 +226,7 @@
                 </p>
               </div>
               <div class="container">
-                <img src="./resource/img/pc/universe/u_img_3.jpg">
+                <img src="{{$template}}/img/resource/img/pc/universe/u_img_3.jpg">
                 <div class="text">
                   <strong>"Oh, my God! I'm falling!"</strong><br>You eventually fell while walking on the street in the darkness without light.<br>You just fell into a hole without realizing it!
                 </div>
@@ -245,7 +245,7 @@
                 </p>
               </div>
               <div class="container">
-                <img src="./resource/img/pc/universe/u_img_4.jpg">
+                <img src="{{$template}}/img/resource/img/pc/universe/u_img_4.jpg">
                 <div class="text">
                   You forgot the pain for a moment and felt curious and afraid.<br>You saw the light leaking out of a huge cave and wanted to go in curious about the source of the light.<br>But you found a large rock blocking your way.<br>So you're going to give up going in, and then something grabs your collar. When You looked back, an unbelievable landscape in front of you.<br><strong>A horse, "Seok-ma," standing in a space full of green nature appeared.</strong>
                 </div>
@@ -264,7 +264,7 @@
                 </p>
               </div>
               <div class="container">
-                <img src="./resource/img/pc/universe/u_img_5.jpg">
+                <img src="{{$template}}/img/resource/img/pc/universe/u_img_5.jpg">
                 <div class="text">
                   The "Seok-ma" gave you a bead.<br>The bead had a small animal on it,<br>but it was hard to tell exactly what it was. The light flashed when you picked up the bead and lit it in the sun.<br>So you lost your mind in the strong light.<br><strong>When you opened your eyes, you saw a cute face full of curiosity.</strong><br><strong>It was "Jin-Myosu".</strong>
                 </div>
@@ -283,7 +283,7 @@
                 </p>
               </div>
               <div class="container">
-                <img src="./resource/img/pc/universe/u_img_6.jpg">
+                <img src="{{$template}}/img/resource/img/pc/universe/u_img_6.jpg">
                 <div class="text">
                   Tired of the hard journey, you arrived at a small lake and were resting.<br>At this time, "Seok-ma" and "Jin-myosu" took off your mask.<br>To you, who was embarrassed because your face was revealed, "Seok-ma" and " Jin-myosu" held out a box containing a <strong>TAL.</strong><br>You reflected the appearance of wearing a <strong>TAL</strong> on a small lake and said this.<br><strong>"I like it."</strong>
                 </div>
@@ -321,7 +321,7 @@
               </p>
             </div>
             <div class="container">
-              <img src="./resource/img/pc/universe/u_img_1.jpg">
+              <img src="{{$template}}/img/resource/img/pc/universe/u_img_1.jpg">
               <div class="text">
                 2XXX,<br>a world where human emotions and culture are not respected.<br>All you can see is a tall building.<br><strong>There is no green color anywhere.</strong><br>In a world full of dust, people wearing oxygen mask respirators walk on the streets.
               </div>
@@ -340,7 +340,7 @@
               </p>
             </div>
             <div class="container">
-              <img src="./resource/img/pc/universe/u_img_2.jpg">
+              <img src="{{$template}}/img/resource/img/pc/universe/u_img_2.jpg">
               <div class="text">
                 On your way home, you found a "UNDER construction" sign,<br>forcing you to <strong>go back the other way.</strong>
               </div>
@@ -359,7 +359,7 @@
               </p>
             </div>
             <div class="container">
-              <img src="./resource/img/pc/universe/u_img_3.jpg">
+              <img src="{{$template}}/img/resource/img/pc/universe/u_img_3.jpg">
               <div class="text">
                 <strong>"Oh, my God! I'm falling!"</strong><br>You eventually fell while walking on the street in the darkness without light.<br>You just fell into a hole without realizing it!
               </div>
@@ -378,7 +378,7 @@
               </p>
             </div>
             <div class="container">
-              <img src="./resource/img/pc/universe/u_img_4.jpg">
+              <img src="{{$template}}/img/resource/img/pc/universe/u_img_4.jpg">
               <div class="text">
                 You forgot the pain for a moment and felt curious and afraid.<br>You saw the light leaking out of a huge cave and wanted to go in curious about the source of the light.<br>But you found a large rock blocking your way.<br>So you're going to give up going in, and then something grabs your collar. When You looked back, an unbelievable landscape in front of you.<br><strong>A horse, "Seok-ma," standing in a space full of green nature appeared.</strong>
               </div>
@@ -397,7 +397,7 @@
               </p>
             </div>
             <div class="container">
-              <img src="./resource/img/pc/universe/u_img_5.jpg">
+              <img src="{{$template}}/img/resource/img/pc/universe/u_img_5.jpg">
               <div class="text">
                 The "Seok-ma" gave you a bead.<br>The bead had a small animal on it,<br>but it was hard to tell exactly what it was. The light flashed when you picked up the bead and lit it in the sun.<br>So you lost your mind in the strong light.<br><strong>When you opened your eyes, you saw a cute face full of curiosity.</strong><br><strong>It was "Jin-Myosu".</strong>
               </div>
@@ -416,7 +416,7 @@
               </p>
             </div>
             <div class="container">
-              <img src="./resource/img/pc/universe/u_img_6.jpg">
+              <img src="{{$template}}/img/resource/img/pc/universe/u_img_6.jpg">
               <div class="text">
                 Tired of the hard journey, you arrived at a small lake and were resting.<br>At this time, "Seok-ma" and "Jin-myosu" took off your mask.<br>To you, who was embarrassed because your face was revealed, "Seok-ma" and " Jin-myosu" held out a box containing a <strong>TAL.</strong><br>You reflected the appearance of wearing a <strong>TAL</strong> on a small lake and said this.<br><strong>"I like it."</strong>
               </div>
@@ -482,7 +482,7 @@
           <div class="right-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./resource/img/pc/funding/guardian_seokma.png" />
+                <img src="{{$template}}/img/resource/img/pc/funding/guardian_seokma.png" />
                 <p class="info">Seokma/ Tomb of the Joseon Dynasty / Seoul and Gyeonggi Province</p>
               </div>
               <div class="swiper-slide">
@@ -520,7 +520,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <p class="swiper__title">The guide on the way</p>
-            <img src="./resource/img/pc/funding/guardian_seokma.png" alt="">
+            <img src="{{$template}}/img/resource/img/pc/funding/guardian_seokma.png" alt="">
             <div class="box__container"><p class="box">Seokma<br>Tomb of the Joseon Dynasty<br>Seoul and Gyeonggi Province</p></div>
             <p class="swiper__content">The “Seokma” is the <strong>first Guardian</strong> to meet in Nower.<br>
               He likes challenges and has a brave personality “Seokma” show you the way “Mr. TAL” wants to go.</p>
@@ -566,7 +566,7 @@
           </div>
         </div>
         <div class="content">
-          <img class="background" src="./resource/img/pc/roadmap/r_bg_1.png">
+          <img class="background" src="{{$template}}/img/resource/img/pc/roadmap/r_bg_1.png">
           <div class="row">
             <p class="item color purple">Intangible Cultural Heritage Support</p>
             <div class="item basic">
@@ -621,7 +621,7 @@
         </div>
       </div>
       <div class="content">
-        <img class="background" src="./resource/img/pc/roadmap/r_bg_1.png">
+        <img class="background" src="{{$template}}/img/resource/img/pc/roadmap/r_bg_1.png">
         <p class="item color purple">
           <span>Intangible Cultural<br>Heritage Support</span>
           <span>▼</span>
@@ -690,7 +690,7 @@
         <div class="cards">
           <div class="column">
             <div class="card yellow">
-              <img class="star" src="./resource/img/pc/benefits/yellow.png">
+              <img class="star" src="{{$template}}/img/resource/img/pc/benefits/yellow.png">
               <p class="top">Grade 1</p>
               <div class="icons">
                 <i class="mrtal"></i>
@@ -734,7 +734,7 @@
               </div>
             </div>
             <div class="card orange">
-              <img class="star" src="./resource/img/pc/benefits/orange.png">
+              <img class="star" src="{{$template}}/img/resource/img/pc/benefits/orange.png">
               <p class="top">Grade 2</p>
               <div class="icons">
                 <i class="mrtal"></i>
@@ -777,7 +777,7 @@
               </div>
             </div>
             <div class="card blue">
-              <img class="star" src="./resource/img/pc/benefits/blue.png">
+              <img class="star" src="{{$template}}/img/resource/img/pc/benefits/blue.png">
               <p class="top">Grade 3</p>
               <div class="icons">
                 <i class="mrtal"></i>
@@ -813,7 +813,7 @@
           </div>
           <div class="column">
             <div class="card lightblue">
-              <img class="star" src="./resource/img/pc/benefits/lightblue.png">
+              <img class="star" src="{{$template}}/img/resource/img/pc/benefits/lightblue.png">
               <p class="top">Grade 4</p>
               <div class="icons mb">
                 <i class="guardians"></i>
@@ -840,7 +840,7 @@
               </div>
             </div>
             <div class="card pink">
-              <img class="star" src="./resource/img/pc/benefits/pink.png">
+              <img class="star" src="{{$template}}/img/resource/img/pc/benefits/pink.png">
               <p class="top">Grade 5</p>
               <div class="icons mb">
                 <i class="guardians"></i>
@@ -862,7 +862,7 @@
               </div>
             </div>
             <div class="card green">
-              <img class="star" src="./resource/img/pc/benefits/green.png">
+              <img class="star" src="{{$template}}/img/resource/img/pc/benefits/green.png">
               <p class="top">Grade 6</p>
               <div class="icons mb">
                 <i class="guardians"></i>
@@ -906,7 +906,7 @@
       <div class="cards">
         <div class="swiper-wrapper">
           <div class="swiper-slide card yellow">
-            <img class="star" src="./resource/img/pc/benefits/yellow.png">
+            <img class="star" src="{{$template}}/img/resource/img/pc/benefits/yellow.png">
             <p class="top">Grade 1</p>
             <div class="icons">
               <i class="mrtal"></i>
@@ -950,7 +950,7 @@
             </div>
           </div>
           <div class="swiper-slide card orange">
-            <img class="star" src="./resource/img/pc/benefits/orange.png">
+            <img class="star" src="{{$template}}/img/resource/img/pc/benefits/orange.png">
             <p class="top">Grade 2</p>
             <div class="icons">
               <i class="mrtal"></i>
@@ -993,7 +993,7 @@
             </div>
           </div>
           <div class="swiper-slide card blue">
-            <img class="star" src="./resource/img/pc/benefits/blue.png">
+            <img class="star" src="{{$template}}/img/resource/img/pc/benefits/blue.png">
             <p class="top">Grade 3</p>
             <div class="icons">
               <i class="mrtal"></i>
@@ -1027,7 +1027,7 @@
             </div>
           </div>
           <div class="swiper-slide card lightblue">
-            <img class="star" src="./resource/img/pc/benefits/lightblue.png">
+            <img class="star" src="{{$template}}/img/resource/img/pc/benefits/lightblue.png">
             <p class="top">Grade 4</p>
             <div class="icons mb">
               <i class="guardians"></i>
@@ -1054,7 +1054,7 @@
             </div>
           </div>
           <div class="swiper-slide card pink">
-            <img class="star" src="./resource/img/pc/benefits/pink.png">
+            <img class="star" src="{{$template}}/img/resource/img/pc/benefits/pink.png">
             <p class="top">Grade 5</p>
             <div class="icons mb">
               <i class="guardians"></i>
@@ -1076,7 +1076,7 @@
             </div>
           </div>
           <div class="swiper-slide card green">
-            <img class="star" src="./resource/img/pc/benefits/green.png">
+            <img class="star" src="{{$template}}/img/resource/img/pc/benefits/green.png">
             <p class="top">Grade 6</p>
             <div class="icons mb">
               <i class="guardians"></i>
@@ -1123,20 +1123,20 @@
         </p>
         <div class="container">
           <div class="box">
-            <img src="./resource/img/pc/teams/m_logo.jpg" />
-            <img src="./resource/img/pc/teams/google_logo.jpg" />
-            <img src="./resource/img/pc/teams/ramda256.png" />
+            <img src="{{$template}}/img/resource/img/pc/teams/m_logo.jpg" />
+            <img src="{{$template}}/img/resource/img/pc/teams/google_logo.jpg" />
+            <img src="{{$template}}/img/resource/img/pc/teams/ramda256.png" />
             <div class="circle">Sponsor</div>
           </div>
           <div class="box center">
-            <img src="./resource/img/pc/teams/ybs_logo.jpg" />
+            <img src="{{$template}}/img/resource/img/pc/teams/ybs_logo.jpg" />
             <div class="circle">Operating</div>
           </div>
           <div class="box">
-            <p><img src="./resource/img/pc/teams/gm.png" />평양검무 보존회</p>
+            <p><img src="{{$template}}/img/resource/img/pc/teams/gm.png" />평양검무 보존회</p>
             <p><span class="hidden"></span>강령탈춤 보존회</p>
-            <p><img src="./resource/img/pc/teams/han.png" />한반도 개발연합</p>
-            <p><img src="./resource/img/pc/teams/hsu.png" />한성대학교 부설<br>디자인아트교육원</p>
+            <p><img src="{{$template}}/img/resource/img/pc/teams/han.png" />한반도 개발연합</p>
+            <p><img src="{{$template}}/img/resource/img/pc/teams/hsu.png" />한성대학교 부설<br>디자인아트교육원</p>
             <div class="circle">Partner</div>
           </div>
         </div>
@@ -1160,26 +1160,26 @@
           <span>▼</span>
         </p>
         <div class="box">
-          <img src="./resource/img/pc/teams/ybs_logo.jpg" />
+          <img src="{{$template}}/img/resource/img/pc/teams/ybs_logo.jpg" />
         </div>
         <p class="item blue">
           <span>Sponsor</span>
           <span>▼</span>
         </p>
         <div class="box">
-          <img src="./resource/img/pc/teams/m_logo.jpg" />
-          <img src="./resource/img/pc/teams/google_logo.jpg" />
-          <img src="./resource/img/pc/teams/ramda256.jpg" />
+          <img src="{{$template}}/img/resource/img/pc/teams/m_logo.jpg" />
+          <img src="{{$template}}/img/resource/img/pc/teams/google_logo.jpg" />
+          <img src="{{$template}}/img/resource/img/pc/teams/ramda256.jpg" />
         </div>
         <p class="item blue">
           <span>Partner</span>
           <span>▼</span>
         </p>
         <div class="box">
-          <p><img src="./resource/img/pc/teams/gm.png" />평양검무 보존회</p>
+          <p><img src="{{$template}}/img/resource/img/pc/teams/gm.png" />평양검무 보존회</p>
           <p><span class="hidden"></span>강령탈춤 보존회</p>
-          <p><img src="./resource/img/pc/teams/han.png" />한반도 개발연합</p>
-          <p><img src="./resource/img/pc/teams/hsu.png" />한성대학교 부설<br>디자인아트교육원</p>
+          <p><img src="{{$template}}/img/resource/img/pc/teams/han.png" />한반도 개발연합</p>
+          <p><img src="{{$template}}/img/resource/img/pc/teams/hsu.png" />한성대학교 부설<br>디자인아트교육원</p>
         </div>
       </div>
     </section>
@@ -1273,7 +1273,7 @@
       </div>
     </section>
     <section class="footer">
-      <img src="./resource/img/pc/header/header_logo.png" />
+      <img src="{{$template}}/img/resource/img/pc/header/header_logo.png" />
       <p>
         와이비에스에듀사회적협동조합 이사장 : 서진성 서울특별시 송파구 가락로 234 힐빌딩 2층 (우)05644<br>
         사업자 등록번호: 362-82-00302 대표전화: 02-6952-6783<br>
@@ -1281,7 +1281,7 @@
       </p>
     </section>
     <section class="footer__mo">
-      <img src="./resource/img/pc/header/header_logo.png" />
+      <img src="{{$template}}/img/resource/img/pc/header/header_logo.png" />
       <p>
         와이비에스에듀사회적협동조합 이사장 : 서진성 서울특별시 송파구 가락로 234 힐빌딩 2층 (우)05644<br>
         사업자 등록번호: 362-82-00302 대표전화: 02-6952-6783<br>
