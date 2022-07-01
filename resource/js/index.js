@@ -25,25 +25,6 @@ $(document).ready(function(){
     autoHeight: false,
     observer: true,
     observeParents: true,
-    touchRatio: 0
-  });
-  swiper3 = new Swiper('.funding .right-swiper', {
-    direction: 'vertical',
-    slidesPerView: 'auto',
-    centeredSlides: true,
-    loop: true,
-    loopedSlides: 6,  
-    autoHeight: false,
-    observer: true,
-    observeParents: true,
-    on:{
-      slidePrevTransitionStart(){
-        swiper2.slidePrev()
-      },
-      slideNextTransitionStart(){
-        swiper2.slideNext()
-      }
-    }
   });
   const swiper4 = new Swiper('.universe__mo .carton', {
     centeredSlides: true,

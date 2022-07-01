@@ -1,3 +1,14 @@
+@keyframes bounce{
+  0%{
+    bottom: -2px;
+  }
+  50% {
+    bottom: -30px;
+  }
+  100% {
+    bottom: -2px;
+  }
+}
 header.mo{
   display: none;
 }
@@ -219,7 +230,7 @@ header.pc .menu .list a + a{
   -webkit-backdrop-filter: blur(15px);
   margin: 0 auto;
   margin-top: 30px;
-  margin-bottom: 140px;
+  margin-bottom: 160px;
   cursor: pointer;
 }
 .social__mission .accept:hover{
@@ -240,9 +251,10 @@ header.pc .menu .list a + a{
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   z-index: 4;
   object-fit: cover;
+  animation: bounce 2s ease-in-out infinite;
 }
 .universe__mo{
   display: none;
@@ -420,13 +432,6 @@ header.pc .menu .list a + a{
   margin-top: 200px;
   position: relative;
 }
-.funding .bg-circle{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 .funding .left-swiper{
   height: 1025px;
   overflow: hidden;
@@ -438,12 +443,34 @@ header.pc .menu .list a + a{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
+}
+.funding .left-swiper .swiper-slide .bg-circle{
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.funding .left-swiper .swiper-slide .info{
+  padding: 20px;
+  background-color: #01FC9F;
+  font-family: GmarketSansTTFLight, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+  position: absolute;
+  bottom: 125px;
+  left: 45%;
+  transform: translateX(25%);
 }
 .funding .swiper__title{
   font-family: GmarketSansTTFBold, sans-serif;
   text-align: left;
   font-size: 40px;
   margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
 }
 .funding .swiper__title strong{
   font-family: GmarketSansTTFBold, sans-serif;
@@ -451,11 +478,14 @@ header.pc .menu .list a + a{
   font-size: 50px;
 }
 .funding .swiper__content{
+  max-width: 570px;
   font-family: GmarketSansTTFMedium, sans-serif;
   text-align: left;
   font-size: 30px;
   line-height: 50px;
   margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
 }
 .funding .swiper__content strong{
   font-family: GmarketSansTTFBold, sans-serif;
@@ -467,6 +497,8 @@ header.pc .menu .list a + a{
   display: flex;
   gap: 12px;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .funding .swiper__buttons a{
   display: inline-flex;
@@ -480,64 +512,10 @@ header.pc .menu .list a + a{
   background-color: #ffffff;
   font-family: GmarketSansTTFMedium, sans-serif;
   font-size: 25px;
+  text-align: center;
 }
 .funding .swiper__buttons a:hover{
   background-color: #01FC9F;
-}
-.funding .right-swiper{
-  height: 1000px;
-  overflow: hidden;
-  flex:1 ;
-}
-.funding .right-swiper .swiper-slide{
-  height: 700px;
-  position: relative;
-  margin: 25px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.funding .right-swiper .swiper-slide.swiper-slide-prev{
-  justify-content: flex-end;
-}
-.funding .right-swiper .swiper-slide.swiper-slide-next{
-  justify-content: flex-start;
-}
-.funding .right-swiper .swiper-slide img{
-  width: 476px;
-  height: 476px;
-  border-radius: 50%;
-}
-.funding .right-swiper .swiper-slide .noimage{
-  width: 476px;
-  height: 476px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  transition: all .3s ease-in-out;
-  background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #01FC9F 100%) 0% 0% no-repeat padding-box;
-  font-size: 50px;
-  color: #463F52;
-}
-.funding .right-swiper .swiper-slide.swiper-slide-active{
-  padding-left: 0;
-}
-.funding .right-swiper .swiper-slide .info{
-  width: 630px;
-  background-color: #01FC9F;
-  font-family: GmarketSansTTFLight, sans-serif;
-  font-size: 30px;
-  text-align: center;
-  display: none;
-  justify-content: left;
-  align-items: center;
-  padding: 20px;
-  text-align: left;
-  margin-top: 50px;
-}
-.funding .right-swiper .swiper-slide.swiper-slide-active .info{
-  display: flex;
 }
 .funding .hidden{
   visibility: hidden;
@@ -822,7 +800,7 @@ header.pc .menu .list a + a{
   line-height: 60px;
 }
 .benefit .buttons{
-  margin-top: 300px;
+  margin-top: 180px;
   display: flex;
   justify-content: center;
   gap: 52px;
@@ -1006,7 +984,7 @@ header.pc .menu .list a + a{
   max-height: 0px;
   overflow-x: hidden;
   overflow-y: auto;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease;
   font-family: GmarketSansTTFMedium, sans-serif;
   text-align: left;
   color: #6a5988;
@@ -1020,7 +998,7 @@ header.pc .menu .list a + a{
   opacity: 0;
 }
 .news .list .item .top.on + .bottom{
-  max-height: 400px;
+  max-height: 405px;
   padding: 80px;
   visibility: visible;
   opacity: 1;
