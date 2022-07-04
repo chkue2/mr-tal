@@ -16,10 +16,8 @@ $(document).ready(function(){
     },
   });
   swiper2 = new Swiper('.funding .left-swiper', {
-    direction: 'vertical',
     slidesPerView: 'auto',
     centeredSlides: true,
-    spaceBetween: 50,
     loop: true,
     loopedSlides: 6,  
     autoHeight: false,
@@ -118,6 +116,10 @@ $(document).on('click', '.teamsMo .item', function(){
   } else {
     $(this).addClass('on')
   }
+})
+$(document).on('click', '.funding .slide-circle', function(){
+  const id = $(this).attr('id')
+  swiper2.slideTo(id, 500, true)
 })
 const toggleSideMenu = () => {
   const target = $('.sidemenu')
