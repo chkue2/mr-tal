@@ -73,7 +73,3 @@ video{max-width: 100%}
 .hover-rotate:hover{
   transform: rotate(-15deg);
 }
-section .maxwidth{
-  margin: 0 auto;
-  max-width: 1920px;
-}

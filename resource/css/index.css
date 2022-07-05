@@ -1134,3 +1134,7 @@ header.pc .menu .list a + a{
   color: #ffffff;
   line-height: 50px;
 }
+.maxwidth{
+  max-width: 1920px;
+  margin: 0 auto;
+}

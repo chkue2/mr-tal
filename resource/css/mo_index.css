@@ -9,7 +9,7 @@
     bottom: -13px;
   }
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 1800px){
   header.pc{
     display: none;
   }
@@ -127,7 +127,7 @@
     height: 100%;
   }
   .langmenu .container .wrapper{
-    width: calc(100% - 160px);
+    width: 165px;
     height: 165px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -561,6 +561,7 @@
     font-family: GmarketSansTTFLight, sans-serif;
     text-align: left;
     font-size: 20px;
+    text-align: center;
   }
   .funding__mo .swiper-slide .swiper__content{
     font-family: GmarketSansTTFLight, sans-serif;
@@ -595,6 +596,7 @@
     background-color: #ffffff;
     font-family: GmarketSansTTFMedium, sans-serif;
     font-size: 20px;
+    text-align: center;
   }
   .funding__mo .swiper-container .button{
     width: 40px;
@@ -801,7 +803,7 @@
     position: relative;
   }
   .benefit__mo .cards .card{
-    width: calc(100vw - 60px);
+    width: 100%;
     border-radius: 20px;
     border: 3px solid #000000;
     position: relative;
@@ -1187,6 +1189,13 @@
     font-size: 13px;
     color: #ffffff;
     line-height: 25px;
+    text-align: center;
+  }
+  .maxwidth{
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  .footer__mo .maxwidth{
     text-align: center;
   }
 }
