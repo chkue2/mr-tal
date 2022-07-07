@@ -430,9 +430,6 @@
   }
   .universe__mo .carton .text{
     width: 100%;
-    height: 230px;
-    overflow-y: auto;
-    overflow-x: hidden;
     font-family: GmarketSansTTFLight, sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -500,6 +497,11 @@
     font-family: GmarketSansTTFMeidum, sans-serif;
     text-align: left;
     font-size: 20px;
+  }
+  .funding__mo .content span{
+    font-family: GmarketSansTTFLight, sans-serif;
+    text-align: left;
+    font-size: 15px;
   }
   .funding__mo .subcontent{
     margin-top: 22px;
