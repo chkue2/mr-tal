@@ -1121,6 +1121,12 @@
     visibility: hidden;
     opacity: 0;
   }
+  .bottom p{
+    color: #6a5988 !important;
+    font-size: 15px !important;
+    font-family: GmarketSansTTFLight, sans-serif !important;
+  }
+
   .news .list .item .bottom img{
     max-width: 50%;
   }

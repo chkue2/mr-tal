@@ -289,19 +289,25 @@ header.pc .menu .list a + a{
   line-height: 40px;
 }
 .universe .carton{
-  max-width: 1920px;
-  margin: 0 auto;
-  margin-top: 230px;
-  position: relative;
-}
-.universe .carton .swiper-slide{
   max-width: 1300px;
-  opacity: .5;
-  transform: scale(.8) translateZ(0) !important;
+  margin: 0 auto;
+  margin-top: 157px;
+  position: relative;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 40px 80px;
+  gap: 35px;
 }
 .universe .carton .tab{
   display: flex;
   align-items: center;
+  position: absolute;
+  top: 0;
+  right: 70px;
+  transform: translateY(-57px);
 }
 .universe .carton .tab p:nth-child(1){
   border-top-left-radius: 20px;
@@ -311,85 +317,141 @@ header.pc .menu .list a + a{
 }
 .universe .carton .tab p{
   flex: 1;
-  height: 200px;
+  width: 157px;
+  height: 57px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F1F1EF;
   cursor: pointer;
+  background-color: #DCDCDC;
 }
 .universe .carton .tab p strong{
-  font-size: 50px;
+  font-size: 20px;
+  color: #ffffff
 }
 .universe .carton .tab p span{
-  font-size: 30px;
-  color: #B7B7B6;
-  font-family: GmarketSansTTFMedium, sans-serif;
+  font-size: 10px;
+  color: #ffffff;
+  font-family: GmarketSansTTFMediumLight, sans-serif;
 }
 .universe .carton .tab p.on{
-  background-color: #8C7DEA;
-  border: 3px solid #000000;
-  border-bottom: none;
+  background-color: #F5F5F5;
 }
 .universe .carton .tab p.on strong,
 .universe .carton .tab p.on span{
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
-.universe .carton .container{
-  background-color: #ffffff;
-  border: 3px solid #000000;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  padding: 63px 200px 142px 200px;
+.universe .carton-left{
+  flex: 0 0 145px;
+}
+.universe .carton-left #cartonSeason{
+  font-size: 30px;
+  line-height: 50px;
+  color: #8C7DEA;
+  margin-bottom: 10px;
+}
+.universe .carton-left #cartonIntro{
+  font-family: GmarketSansTTFMediumMedium, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+}
+.universe .carton .swiper-background{
+  padding: 0 25px;
   position: relative;
+}
+.universe .carton .swiper-container{
+  position: relative;
+  overflow: hidden;
+  padding-top: 15px;
+}
+.universe .carton .swiper-slide{
+  max-width: 386px;
+  height: 677px;
+  transition: all .3s ease-in-out;
+}
+.universe .carton .container{
+  height: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  position: relative;
+  transition: transform .2s ease-in-out;
+  transform: translateY(0);
+}
+.universe .carton .container:hover{
+  transform: translateY(-5px);
 }
 .universe .carton .container img{
   width: 100%;
   height: auto;
   border-radius: 20px;
-  margin-bottom: 75px;
+  margin-bottom: 22px;
 }
 .universe .carton .text{
   width: 100%;
-  font-family: GmarketSansTTFMedium, sans-serif;
-  font-size: 30px;
+  height: 350px;
+  overflow-y: auto;
+  font-family: GmarketSansTTFLight, sans-serif;
+  font-size: 20px;
   position: relative;
+  line-height: 30px;
 }
 .universe .carton .text strong{
-  font-family: GmarketSansTTFBold, sans-serif;
-  font-size: 30px;
+  font-family: GmarketSansTTFMedium, sans-serif;
+  font-size: 20px;
 }
 .universe .carton .page{
-  font-family: GmarketSansTTFMedium, sans-serif;
-  font-size: 30px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-family: GmarketSansTTFLight, sans-serif;
+  font-size: 10px;
   position: absolute;
-  bottom: 80px;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 .universe .carton .swiper-slide.swiper-slide-active{
   opacity: 1;
   transform: scale(1) translateZ(0) !important;
 }
 .universe .carton .button{
-  width: 240px;
-  height: 240px;
+  width: 36px;
+  height: 36px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
-  opacity: .5;
   cursor: pointer;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  transition: all .3s ease-in-out;
+}
+.universe .carton .button:hover{
+  transform: translateY(-50%) scale(1.1);
 }
 .universe .carton .button.prev{
-  background: url(../img/pc/universe/arrow-left-s-line.png) no-repeat center/cover;
+  background-image: url(../img/pc/universe/arrow-drop-left-line.png);
   left: 0;
 }
 .universe .carton .button.next{
-  background: url(../img/pc/universe/arrow-right-s-line.png) no-repeat center/cover;
-  right: 0;
+  background-image: url(../img/pc/universe/arrow-drop-right-line.png);
+  right: 5px;
+}
+.universe .carton .swiper-scrollbar{
+  width: 535px;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
 }
 .funding__mo{
   display: none;
@@ -788,24 +850,6 @@ header.pc .menu .list a + a{
   width: 30px;
   height: 30px;
 }
-.benefit .cards .column .card.yellow{
-  background-color: #FEFEC0;
-}
-.benefit .cards .column .card.orange{
-  background-color: #FCE6D1;
-}
-.benefit .cards .column .card.blue{
-  background-color: #E8EBF2;
-}
-.benefit .cards .column .card.lightblue{
-  background-color: #D1EBEB;
-}
-.benefit .cards .column .card.pink{
-  background-color: #FCE5F3;
-}
-.benefit .cards .column .card.green{
-  background-color: #C7F6E0;
-}
 .benefit .cards .column .card .star{
   width: 100px;
   height: 100px;
@@ -1071,6 +1115,11 @@ header.pc .menu .list a + a{
   visibility: hidden;
   opacity: 0;
 }
+.bottom p{
+  color: #6a5988;
+  font-size: 35px;
+  font-family: GmarketSansTTFMedium, sans-serif;
+}
 .news .list .item .top.on + .bottom{
   max-height: 405px;
   padding: 80px;
@@ -1139,4 +1188,29 @@ header.pc .menu .list a + a{
 .maxwidth{
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.footer .maxwidth {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.yellow{
+  background-color: #FEFEC0;
+}
+.orange{
+  background-color: #FCE6D1;
+}
+.blue{
+  background-color: #E8EBF2;
+}
+.lightblue{
+  background-color: #D1EBEB;
+}
+.pink{
+  background-color: #FCE5F3;
+}
+.green{
+  background-color: #C7F6E0;
 }

@@ -1,19 +1,20 @@
 let swiper2 = null
 let swiper3 = null
 $(document).ready(function(){
-  const swiper1 = new Swiper('.universe .carton', {
-    centeredSlides: true,
+  const swiper1 = new Swiper('.universe .carton .swiper-container', {
     slidesPerView: 'auto',
-    spaceBetween: 204,
-    loop: true,
-    loopedSlides: 5,  
-    autoHeight: false,
+    spaceBetween: 12,
+    autoHeight: true,
     observer: true,
     observeParents: true,
     navigation: {
       nextEl: '.universe .carton .button.next',
       prevEl: '.universe .carton .button.prev',
     },
+    scrollbar:{
+      el: '.carton .swiper-scrollbar',
+      hide: false
+    }
   });
   swiper2 = new Swiper('.funding .left-swiper', {
     slidesPerView: 'auto',
