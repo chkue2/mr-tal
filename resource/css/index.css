@@ -912,6 +912,9 @@ header.pc .menu .list a + a{
   line-height: 60px;
   margin-top: 198px;
 }
+.benefit .bottom.mt0{
+  margin-top: 0;
+}
 .benefit .bottom strong{
   font-family: GmarketSansTTFMedium, sans-serif;
   font-size: 30px;
@@ -936,9 +939,14 @@ header.pc .menu .list a + a{
   font-family: GmarketSansTTFMedium, sans-serif;
   font-size: 30px;
   color: #ffffff;
-
 }
-.benefit .buttons p:hover{
+.benefit .buttons p a{
+  font-family: GmarketSansTTFMedium, sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+.benefit .buttons p:hover,
+.benefit .buttons p:hover a{
   background-color: #ffffff;
   color: #000000;
 }
@@ -1022,9 +1030,9 @@ header.pc .menu .list a + a{
 }
 .teams .container .box p{
   font-family: GmarketSansTTFMedium, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 30px;
-  text-align: left;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
